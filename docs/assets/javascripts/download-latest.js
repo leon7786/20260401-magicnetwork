@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const buttons = document.querySelectorAll('a.download-latest[data-repo]');
   const cache = new Map();
+  const proxyPrefix = 'https://github.xloard.com/';
+
+  const proxify = (url) => {
+    if (!url) return url;
+    if (url.startsWith(proxyPrefix)) return url;
+    if (url.startsWith('https://github.com/')) return `${proxyPrefix}${url}`;
+    return url;
+  };
 
   const getLatest = async (repo) => {
     if (cache.has(repo)) return cache.get(repo);
@@ -15,7 +23,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   for (const btn of buttons) {
     const repo = btn.dataset.repo;
     const matchExpr = btn.dataset.match || '';
-    const fallback = btn.dataset.fallback || `https://github.com/${repo}/releases/latest`;
+    const fallbackRaw = btn.dataset.fallback || `https://github.com/${repo}/releases/latest`;
+    const fallback = proxify(fallbackRaw);
 
     if (!repo) continue;
 
@@ -28,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const assets = data.assets || [];
 
       if (!matchExpr) {
-        btn.href = data.html_url || fallback;
+        btn.href = proxify(data.html_url || fallbackRaw);
         continue;
       }
 
@@ -36,9 +45,9 @@ document.addEventListener('DOMContentLoaded', async () => {
       const asset = assets.find((a) => regex.test(a.name || ''));
 
       if (asset && asset.browser_download_url) {
-        btn.href = asset.browser_download_url;
+        btn.href = proxify(asset.browser_download_url);
       } else {
-        btn.href = data.html_url || fallback;
+        btn.href = proxify(data.html_url || fallbackRaw);
       }
     } catch {
       btn.href = fallback;
