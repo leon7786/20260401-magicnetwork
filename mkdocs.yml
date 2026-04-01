@@ -3,13 +3,21 @@ site_url: https://leon7786.github.io/20260401-magicnetwork/
 repo_url: https://github.com/leon7786/20260401-magicnetwork
 repo_name: leon7786/20260401-magicnetwork
 
+extra_css:
+  - assets/stylesheets/n8n-like.css
+
 extra_javascript:
   - assets/javascripts/download-latest.js
   - assets/javascripts/i18n-render.js
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
   features:
     - navigation.tabs
     - navigation.sections

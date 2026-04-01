@@ -8,106 +8,86 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const locale = detectLocale();
-  const main = document.querySelector('main.md-main') || document.body;
-  const hasCJK = (s) => /[\u3400-\u9fff]/.test(s);
-  const hasLatin = (s) => /[A-Za-z]/.test(s);
 
-  const twReplacements = [
-    ['简介', '簡介'],
-    ['官方仓库', '官方倉庫'],
-    ['官方项目', '官方專案'],
-    ['下载来源', '下載來源'],
-    ['下载', '下載'],
-    ['安装版', '安裝版'],
-    ['便携版', '可攜版'],
-    ['架构版', '架構版'],
-    ['免费', '免費'],
-    ['软件', '軟體'],
-    ['客户端', '客戶端'],
-    ['页面', '頁面'],
-    ['说明', '說明'],
-    ['仅保留历史说明', '僅保留歷史說明'],
-    ['按钮', '按鈕'],
-    ['可在 iOS 上使用', '可在 iOS 上使用'],
-    ['平台', '平台'],
-    ['规则', '規則'],
-    ['适合', '適合'],
-    ['轻量', '輕量'],
-    ['覆盖', '涵蓋'],
-    ['节点', '節點']
-  ];
-
-  const applyTwStyle = (text) => {
-    let out = text;
-    twReplacements.forEach(([from, to]) => {
-      out = out.split(from).join(to);
-    });
-    return out;
+  const navReplacements = {
+    en: [
+      ['Windows / Desktop', 'Windows / Desktop'],
+      ['iOS / iPadOS', 'iOS / iPadOS'],
+      ['（付费）', '(Paid)'],
+      ['（免费）', '(Free)'],
+      ['（已停更）', '(Archived)'],
+      ['NekoRay / Nekoray', 'NekoRay']
+    ],
+    'zh-Hant-TW': [
+      ['Windows / Desktop', 'Windows / 桌面端'],
+      ['（付费）', '（付費）'],
+      ['（免费）', '（免費）'],
+      ['（已停更）', '（已停更）']
+    ],
+    'zh-Hans': []
   };
 
-  const normalizeHeading = (text) => {
-    if (!text.includes(' / ')) return text;
-    const [left, right] = text.split(' / ');
-    if (!left || !right) return text;
-    if (locale === 'en' && hasCJK(left) && hasLatin(right)) return right.trim();
-    if (locale !== 'en' && hasCJK(left) && hasLatin(right)) return left.trim();
-    return text;
+  const replaceText = (text, localeKey) => {
+    return (navReplacements[localeKey] || []).reduce(
+      (acc, [from, to]) => acc.split(from).join(to),
+      text
+    );
   };
 
-  main.querySelectorAll('h1,h2,h3,h4,h5,h6').forEach((h) => {
-    let content = normalizeHeading(h.textContent || '');
-    if (locale === 'zh-Hant-TW') content = applyTwStyle(content);
-    h.textContent = content;
-  });
+  const applyExplicitBlocks = () => {
+    const article = document.querySelector('article.md-content__inner.md-typeset');
+    if (!article) return;
 
-  const paras = Array.from(main.querySelectorAll('p'));
-  for (let i = 0; i < paras.length - 1; i++) {
-    const a = paras[i];
-    const b = paras[i + 1];
-    const ta = (a.textContent || '').trim();
-    const tb = (b.textContent || '').trim();
-    if (!ta || !tb) continue;
-    if (a.parentElement !== b.parentElement) continue;
-    if (hasCJK(ta) && !hasLatin(ta) && hasLatin(tb) && !hasCJK(tb)) {
-      if (locale === 'en') a.style.display = 'none';
-      else b.style.display = 'none';
-      i++;
-    }
-  }
-
-  if (locale === 'en') {
-    const enButtonText = (text) => text
-      .replace('*安装版', '*Installer')
-      .replace('便携版', 'Portable')
-      .replace('*M系列架构版', '*Apple Silicon')
-      .replace('Intel 版', 'Intel')
-      .replace('按钮（', '(')
-      .replace('）', ')');
-
-    main.querySelectorAll('a.md-button').forEach((btn) => {
-      btn.textContent = enButtonText((btn.textContent || '').trim());
+    const langHeaders = Array.from(article.querySelectorAll('h3')).filter((h) => {
+      const t = (h.textContent || '').trim();
+      return t === '[zh-Hans]' || t === '[zh-Hant-TW]' || t === '[en]';
     });
 
-    document.querySelectorAll('.md-nav__link, .md-tabs__link').forEach((el) => {
-      el.textContent = (el.textContent || '')
-        .replace('（付费）', '(Paid)')
-        .replace('（免费）', '(Free)')
-        .replace('（已停更）', '(Archived)');
-    });
-    return;
-  }
+    if (!langHeaders.length) return;
 
-  if (locale === 'zh-Hant-TW') {
-    const convertTextNodes = (root) => {
-      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null);
-      const texts = [];
-      while (walker.nextNode()) texts.push(walker.currentNode);
-      texts.forEach((t) => {
-        t.nodeValue = applyTwStyle(t.nodeValue);
+    const groups = [];
+    langHeaders.forEach((header, idx) => {
+      const lang = (header.textContent || '').trim().slice(1, -1);
+      const endNode = idx + 1 < langHeaders.length ? langHeaders[idx + 1] : null;
+      const nodes = [];
+      let cur = header;
+      while (cur && cur !== endNode) {
+        nodes.push(cur);
+        cur = cur.nextElementSibling;
+      }
+      groups.push({ lang, nodes });
+    });
+
+    groups.forEach(({ lang, nodes }) => {
+      const visible = lang === locale;
+      nodes.forEach((n, i) => {
+        if (i === 0) {
+          n.style.display = 'none';
+        } else {
+          n.style.display = visible ? '' : 'none';
+        }
       });
-    };
+    });
+  };
 
-    convertTextNodes(main);
-    document.querySelectorAll('.md-nav, .md-tabs').forEach(convertTextNodes);
-  }
+  const localizeNav = () => {
+    document.querySelectorAll('.md-nav__link, .md-tabs__link').forEach((el) => {
+      el.textContent = replaceText((el.textContent || '').trim(), locale);
+    });
+  };
+
+  const localizeTitle = () => {
+    const title = document.querySelector('.md-header__title');
+    if (!title) return;
+    const map = {
+      'zh-Hans': '代理客户端导航',
+      'zh-Hant-TW': '代理客戶端導覽',
+      en: 'Proxy Client Guide'
+    };
+    title.textContent = map[locale] || map.en;
+  };
+
+  applyExplicitBlocks();
+  localizeNav();
+  localizeTitle();
 });
