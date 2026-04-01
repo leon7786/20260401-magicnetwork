@@ -7,7 +7,7 @@ v2rayNG is a classic Android client for V2Ray/Xray with a mature configuration w
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/2dust/v2rayNG
-- Latest Release: https://github.com/2dust/v2rayNG/releases/tag/2.0.15
+- Latest Release: https://github.com/2dust/v2rayNG/releases/latest
 
 ## 下载 / Download
-- Android arm64 APK: https://github.com/2dust/v2rayNG/releases/download/2.0.15/v2rayNG_2.0.15_arm64-v8a.apk
+<a class="md-button md-button--primary download-latest" data-repo="2dust/v2rayNG" data-match="v2rayNG_.*_arm64-v8a\.apk$" data-fallback="https://github.com/2dust/v2rayNG/releases/latest">Android *arm64 APK</a>

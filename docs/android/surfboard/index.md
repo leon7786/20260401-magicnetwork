@@ -7,7 +7,7 @@ Surfboard is a streamlined Android proxy client for users preferring a lightweig
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/getsurfboard/surfboard
-- Latest Release: https://github.com/getsurfboard/surfboard/releases/tag/mobile-2.29.1
+- Latest Release: https://github.com/getsurfboard/surfboard/releases/latest
 
 ## 下载 / Download
-- Android arm64 APK: https://github.com/getsurfboard/surfboard/releases/download/mobile-2.29.1/mobile-arm64-v8a-release.apk
+<a class="md-button md-button--primary download-latest" data-repo="getsurfboard/surfboard" data-match="mobile-arm64-v8a-release\.apk$" data-fallback="https://github.com/getsurfboard/surfboard/releases/latest">Android *arm64 APK</a>

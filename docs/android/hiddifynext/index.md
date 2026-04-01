@@ -7,7 +7,7 @@ HiddifyNext on Android supports multiple cores like sing-box for multi-protocol 
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/hiddify/hiddify-app
-- Latest Release: https://github.com/hiddify/hiddify-app/releases/tag/v4.1.1
+- Latest Release: https://github.com/hiddify/hiddify-app/releases/latest
 
 ## 下载 / Download
-- Android arm64 APK: https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Android-arm64.apk
+<a class="md-button md-button--primary download-latest" data-repo="hiddify/hiddify-app" data-match="Hiddify-Android-arm64\.apk$" data-fallback="https://github.com/hiddify/hiddify-app/releases/latest">Android *arm64 APK</a>

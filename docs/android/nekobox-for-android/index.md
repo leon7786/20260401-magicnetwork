@@ -7,7 +7,7 @@ NekoBox for Android is an all-in-one Android client commonly used in the sing-bo
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/MatsuriDayo/NekoBoxForAndroid
-- Latest Release: https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/tag/1.4.2
+- Latest Release: https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest
 
 ## 下载 / Download
-- Android arm64 APK: https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.4.2/NekoBox-1.4.2-arm64-v8a.apk
+<a class="md-button md-button--primary download-latest" data-repo="MatsuriDayo/NekoBoxForAndroid" data-match="NekoBox-.*-arm64-v8a\.apk$" data-fallback="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest">Android *arm64 APK</a>

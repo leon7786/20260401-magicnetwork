@@ -7,7 +7,7 @@ Karing on Android is lightweight while providing complete proxy capabilities and
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/KaringX/karing
-- Latest Release: https://github.com/KaringX/karing/releases/tag/v1.2.15.1806
+- Latest Release: https://github.com/KaringX/karing/releases/latest
 
 ## 下载 / Download
-- Android arm64 APK: https://github.com/KaringX/karing/releases/download/v1.2.15.1806/karing_1.2.15.1806_android_arm64-v8a.apk
+<a class="md-button md-button--primary download-latest" data-repo="KaringX/karing" data-match="karing_.*_android_arm64-v8a\.apk$" data-fallback="https://github.com/KaringX/karing/releases/latest">Android *arm64 APK</a>

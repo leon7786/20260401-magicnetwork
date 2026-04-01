@@ -7,7 +7,7 @@ Clash Meta for Android is a mainstream Clash Meta rule-based client for Android.
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/MetaCubeX/ClashMetaForAndroid
-- Latest Release: https://github.com/MetaCubeX/ClashMetaForAndroid/releases/tag/v2.11.25
+- Latest Release: https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest
 
 ## 下载 / Download
-- Android arm64 APK: https://github.com/MetaCubeX/ClashMetaForAndroid/releases/download/v2.11.25/cmfa-2.11.25-meta-arm64-v8a-release.apk
+<a class="md-button md-button--primary download-latest" data-repo="MetaCubeX/ClashMetaForAndroid" data-match="cmfa-.*-meta-arm64-v8a-release\.apk$" data-fallback="https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest">Android *arm64 APK</a>
