@@ -42,4 +42,5 @@ nav:
       - Shadowrocket（付费）: ios/shadowrocket/index.md
       - Quantumult X（付费）: ios/quantumult-x/index.md
       - Stash: ios/stash/index.md
-      - HiddifyNext / sing-box App: ios/hiddifynext-sing-box/index.md
+      - HiddifyNext（免费）: ios/hiddifynext/index.md
+      - sing-box（免费）: ios/sing-box/index.md
