@@ -7,7 +7,8 @@ Clash Nyanpasu offers an actively maintained Clash GUI experience on macOS.
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/libnyanpasu/clash-nyanpasu
-- Latest Release: https://github.com/libnyanpasu/clash-nyanpasu/releases/tag/v1.6.1
+- Latest Release: https://github.com/libnyanpasu/clash-nyanpasu/releases/latest
 
 ## 下载 / Download
-- macOS aarch64 DMG: https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_aarch64.dmg
+<a class="md-button download-latest" data-repo="libnyanpasu/clash-nyanpasu" data-match="Clash\.Nyanpasu_.*_x64\.dmg$" data-fallback="https://github.com/libnyanpasu/clash-nyanpasu/releases/latest">macOS Intel 版</a>
+<a class="md-button md-button--primary download-latest" data-repo="libnyanpasu/clash-nyanpasu" data-match="Clash\.Nyanpasu_.*_aarch64\.dmg$" data-fallback="https://github.com/libnyanpasu/clash-nyanpasu/releases/latest">macOS *M系列架构版</a>

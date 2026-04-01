@@ -3,6 +3,9 @@ site_url: https://leon7786.github.io/20260401-magicnetwork/
 repo_url: https://github.com/leon7786/20260401-magicnetwork
 repo_name: leon7786/20260401-magicnetwork
 
+extra_javascript:
+  - assets/javascripts/download-latest.js
+
 theme:
   name: material
   language: zh
@@ -41,7 +44,7 @@ nav:
       - NekoRay: macos/nekoray/index.md
   - iOS / iPadOS:
       - 平台介绍 / Intro: ios/intro.md
-      - Shadowrocket: ios/shadowrocket/index.md
-      - Quantumult X: ios/quantumult-x/index.md
+      - Shadowrocket（付费）: ios/shadowrocket/index.md
+      - Quantumult X（付费）: ios/quantumult-x/index.md
       - Stash: ios/stash/index.md
       - HiddifyNext / sing-box App: ios/hiddifynext-sing-box/index.md

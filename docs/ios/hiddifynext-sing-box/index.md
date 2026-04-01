@@ -10,8 +10,8 @@ HiddifyNext can be used on iOS, and sing-box has official ecosystem support.
 - sing-box GitHub: https://github.com/SagerNet/sing-box
 
 ## 下载来源 / Download Source
-- Hiddify (App Store Search): https://apps.apple.com/us/search?term=Hiddify
-- sing-box (App Store Search): https://apps.apple.com/us/search?term=sing-box
+<a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=Hiddify" target="_blank" rel="noopener">App Store 按钮（Hiddify）</a>
+<a class="md-button" href="https://apps.apple.com/us/search?term=sing-box" target="_blank" rel="noopener">App Store 按钮（sing-box）</a>
 
 ## 说明 / Notes
 - iOS 端下载以 App Store 为准。

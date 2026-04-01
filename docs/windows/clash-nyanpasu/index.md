@@ -7,7 +7,8 @@ Clash Nyanpasu is an actively maintained Clash GUI client with rule routing and 
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/libnyanpasu/clash-nyanpasu
-- Latest Release: https://github.com/libnyanpasu/clash-nyanpasu/releases/tag/v1.6.1
+- Latest Release: https://github.com/libnyanpasu/clash-nyanpasu/releases/latest
 
 ## 下载 / Download
-- Windows x64 Setup: https://github.com/libnyanpasu/clash-nyanpasu/releases/download/v1.6.1/Clash.Nyanpasu_1.6.1_x64-setup.exe
+<a class="md-button md-button--primary download-latest" data-repo="libnyanpasu/clash-nyanpasu" data-match="Clash\.Nyanpasu_.*_x64-setup\.exe$" data-fallback="https://github.com/libnyanpasu/clash-nyanpasu/releases/latest">Windows x64 *安装版</a>
+<a class="md-button download-latest" data-repo="libnyanpasu/clash-nyanpasu" data-match="Clash\.Nyanpasu_.*_x64_portable\.zip$" data-fallback="https://github.com/libnyanpasu/clash-nyanpasu/releases/latest">Windows x64 便携版</a>

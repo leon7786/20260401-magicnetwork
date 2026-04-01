@@ -7,7 +7,8 @@ FlClash is a Flutter-based cross-platform Clash client for desktop and mobile.
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/chen08209/FlClash
-- Latest Release: https://github.com/chen08209/FlClash/releases/tag/v0.8.92
+- Latest Release: https://github.com/chen08209/FlClash/releases/latest
 
 ## 下载 / Download
-- Windows x64 Setup: https://github.com/chen08209/FlClash/releases/download/v0.8.92/FlClash-0.8.92-windows-amd64-setup.exe
+<a class="md-button md-button--primary download-latest" data-repo="chen08209/FlClash" data-match="FlClash-.*-windows-amd64-setup\.exe$" data-fallback="https://github.com/chen08209/FlClash/releases/latest">Windows x64 *安装版</a>
+<a class="md-button download-latest" data-repo="chen08209/FlClash" data-match="FlClash-.*-windows-amd64\.zip$" data-fallback="https://github.com/chen08209/FlClash/releases/latest">Windows x64 便携版</a>

@@ -7,7 +7,8 @@ Karing is a lightweight yet full-featured cross-platform proxy client for deskto
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/KaringX/karing
-- Latest Release: https://github.com/KaringX/karing/releases/tag/v1.2.15.1806
+- Latest Release: https://github.com/KaringX/karing/releases/latest
 
 ## 下载 / Download
-- Windows x64 Setup: https://github.com/KaringX/karing/releases/download/v1.2.15.1806/karing_1.2.15.1806_windows_x64.exe
+<a class="md-button md-button--primary download-latest" data-repo="KaringX/karing" data-match="karing_.*_windows_x64\.exe$" data-fallback="https://github.com/KaringX/karing/releases/latest">Windows x64 *安装版</a>
+<a class="md-button download-latest" data-repo="KaringX/karing" data-match="karing_.*_windows_x64\.zip$" data-fallback="https://github.com/KaringX/karing/releases/latest">Windows x64 便携版</a>

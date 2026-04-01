@@ -7,7 +7,8 @@ FlClash provides a unified cross-platform experience and supports Clash rules/su
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/chen08209/FlClash
-- Latest Release: https://github.com/chen08209/FlClash/releases/tag/v0.8.92
+- Latest Release: https://github.com/chen08209/FlClash/releases/latest
 
 ## 下载 / Download
-- macOS amd64 DMG: https://github.com/chen08209/FlClash/releases/download/v0.8.92/FlClash-0.8.92-macos-amd64.dmg
+<a class="md-button download-latest" data-repo="chen08209/FlClash" data-match="FlClash-.*-macos-amd64\.dmg$" data-fallback="https://github.com/chen08209/FlClash/releases/latest">macOS Intel 版</a>
+<a class="md-button md-button--primary download-latest" data-repo="chen08209/FlClash" data-match="FlClash-.*-macos-arm64\.dmg$" data-fallback="https://github.com/chen08209/FlClash/releases/latest">macOS *M系列架构版</a>

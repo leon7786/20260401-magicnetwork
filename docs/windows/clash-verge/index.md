@@ -7,7 +7,8 @@ Clash Verge is a modern desktop Clash client with rule-based routing and cross-p
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/clash-verge-rev/clash-verge-rev
-- Latest Release: https://github.com/clash-verge-rev/clash-verge-rev/releases/tag/v2.4.7
+- Latest Release: https://github.com/clash-verge-rev/clash-verge-rev/releases/latest
 
 ## 下载 / Download
-- Windows x64 Setup: https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.4.7/Clash.Verge_2.4.7_x64-setup.exe
+<a class="md-button md-button--primary download-latest" data-repo="clash-verge-rev/clash-verge-rev" data-match="Clash\.Verge_.*_x64-setup\.exe$" data-fallback="https://github.com/clash-verge-rev/clash-verge-rev/releases/latest">Windows x64 *安装版</a>
+<a class="md-button download-latest" data-repo="clash-verge-rev/clash-verge-rev" data-match="Clash\.Verge_.*_x64.*portable.*\.(zip|7z)$" data-fallback="https://github.com/clash-verge-rev/clash-verge-rev/releases/latest">Windows x64 便携版</a>

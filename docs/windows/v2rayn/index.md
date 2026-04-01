@@ -10,8 +10,8 @@ v2rayN is a classic v2ray/Xray client on Windows, with straightforward node mana
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/2dust/v2rayN
-- Latest Release: https://github.com/2dust/v2rayN/releases/tag/7.19.5
+- Latest Release: https://github.com/2dust/v2rayN/releases/latest
 
 ## 下载 / Download
-- Windows x64 Desktop: https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-windows-64-desktop.zip
-- Windows x64 Portable: https://github.com/2dust/v2rayN/releases/download/7.19.5/v2rayN-windows-64.zip
+<a class="md-button md-button--primary download-latest" data-repo="2dust/v2rayN" data-match="v2rayN-windows-64-desktop\.zip$" data-fallback="https://github.com/2dust/v2rayN/releases/latest">Windows x64 *安装版</a>
+<a class="md-button download-latest" data-repo="2dust/v2rayN" data-match="v2rayN-windows-64\.zip$" data-fallback="https://github.com/2dust/v2rayN/releases/latest">Windows x64 便携版</a>

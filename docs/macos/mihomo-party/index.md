@@ -7,7 +7,8 @@ Mihomo Party on macOS provides Clash/Mihomo rule routing with GUI management.
 
 ## 官方仓库 / Official Repository
 - GitHub: https://github.com/mihomo-party-org/clash-party
-- Latest Release: https://github.com/mihomo-party-org/clash-party/releases/tag/v1.9.4
+- Latest Release: https://github.com/mihomo-party-org/clash-party/releases/latest
 
 ## 下载 / Download
-- macOS arm64 PKG: https://github.com/mihomo-party-org/clash-party/releases/download/v1.9.4/clash-party-macos-1.9.4-arm64.pkg
+<a class="md-button download-latest" data-repo="mihomo-party-org/clash-party" data-match="mihomo-party-macos-.*-x64\.pkg$" data-fallback="https://github.com/mihomo-party-org/clash-party/releases/latest">macOS Intel 版</a>
+<a class="md-button md-button--primary download-latest" data-repo="mihomo-party-org/clash-party" data-match="mihomo-party-macos-.*-arm64\.pkg$" data-fallback="https://github.com/mihomo-party-org/clash-party/releases/latest">macOS *M系列架构版</a>
