@@ -1,0 +1,46 @@
+site_name: 代理客户端导航 / Proxy Client Guide
+site_url: https://leon7786.github.io/20260401-magicnetwork/
+repo_url: https://github.com/leon7786/20260401-magicnetwork
+repo_name: leon7786/20260401-magicnetwork
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+
+nav:
+  - 首页 / Home: index.md
+  - Windows / Desktop:
+      - 平台介绍 / Intro: windows/intro.md
+      - Clash Verge: windows/clash-verge.md
+      - Mihomo Party: windows/mihomo-party.md
+      - FlClash: windows/flclash.md
+      - Clash Nyanpasu: windows/clash-nyanpasu.md
+      - HiddifyNext: windows/hiddifynext.md
+      - NekoRay / Nekoray: windows/nekoray.md
+      - Karing: windows/karing.md
+  - Android:
+      - 平台介绍 / Intro: android/intro.md
+      - v2rayNG: android/v2rayng.md
+      - Clash Meta for Android: android/clash-meta-for-android.md
+      - NekoBox for Android: android/nekobox-for-android.md
+      - HiddifyNext: android/hiddifynext.md
+      - Karing: android/karing.md
+      - Surfboard: android/surfboard.md
+  - macOS:
+      - 平台介绍 / Intro: macos/intro.md
+      - Mihomo Party: macos/mihomo-party.md
+      - FlClash: macos/flclash.md
+      - Clash Nyanpasu: macos/clash-nyanpasu.md
+      - ClashX（已停更）: macos/clashx.md
+      - HiddifyNext: macos/hiddifynext.md
+      - NekoRay: macos/nekoray.md
+  - iOS / iPadOS:
+      - 平台介绍 / Intro: ios/intro.md
+      - Shadowrocket: ios/shadowrocket.md
+      - Quantumult X: ios/quantumult-x.md
+      - Stash: ios/stash.md
+      - HiddifyNext / sing-box App: ios/hiddifynext-sing-box.md
