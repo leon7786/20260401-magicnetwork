@@ -5,6 +5,7 @@ repo_name: leon7786/20260401-magicnetwork
 
 extra_javascript:
   - assets/javascripts/download-latest.js
+  - assets/javascripts/i18n-render.js
 
 theme:
   name: material
