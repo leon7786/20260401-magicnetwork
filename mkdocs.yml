@@ -16,7 +16,6 @@ theme:
 
 nav:
   - Windows / Desktop:
-      - 平台介绍 / Intro: windows/intro.md
       - Clash Verge: windows/clash-verge/index.md
       - Mihomo Party: windows/mihomo-party/index.md
       - FlClash: windows/flclash/index.md
@@ -26,7 +25,6 @@ nav:
       - Karing: windows/karing/index.md
       - v2rayN: windows/v2rayn/index.md
   - Android:
-      - 平台介绍 / Intro: android/intro.md
       - v2rayNG: android/v2rayng/index.md
       - Clash Meta for Android: android/clash-meta-for-android/index.md
       - NekoBox for Android: android/nekobox-for-android/index.md
@@ -34,7 +32,6 @@ nav:
       - Karing: android/karing/index.md
       - Surfboard: android/surfboard/index.md
   - macOS:
-      - 平台介绍 / Intro: macos/intro.md
       - Mihomo Party: macos/mihomo-party/index.md
       - FlClash: macos/flclash/index.md
       - Clash Nyanpasu: macos/clash-nyanpasu/index.md
@@ -42,7 +39,6 @@ nav:
       - HiddifyNext: macos/hiddifynext/index.md
       - NekoRay: macos/nekoray/index.md
   - iOS / iPadOS:
-      - 平台介绍 / Intro: ios/intro.md
       - Shadowrocket（付费）: ios/shadowrocket/index.md
       - Quantumult X（付费）: ios/quantumult-x/index.md
       - Stash: ios/stash/index.md
