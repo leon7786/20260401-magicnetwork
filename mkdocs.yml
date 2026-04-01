@@ -22,6 +22,7 @@ nav:
       - HiddifyNext: windows/hiddifynext/index.md
       - NekoRay / Nekoray: windows/nekoray/index.md
       - Karing: windows/karing/index.md
+      - v2rayN: windows/v2rayn/index.md
   - Android:
       - 平台介绍 / Intro: android/intro.md
       - v2rayNG: android/v2rayng/index.md
