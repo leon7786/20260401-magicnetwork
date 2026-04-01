@@ -15,7 +15,6 @@ theme:
     - navigation.expand
 
 nav:
-  - 首页 / Home: index.md
   - Windows / Desktop:
       - 平台介绍 / Intro: windows/intro.md
       - Clash Verge: windows/clash-verge/index.md
