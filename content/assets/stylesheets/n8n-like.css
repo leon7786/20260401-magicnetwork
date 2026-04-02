@@ -67,11 +67,15 @@
 }
 
 .md-grid {
-  max-width: 1280px;
+  max-width: 1500px;
 }
 
 .md-sidebar--primary {
-  width: 18.5rem;
+  width: 15.5rem;
+}
+
+.md-sidebar--secondary {
+  width: 12.5rem;
 }
 
 .md-sidebar--primary .md-sidebar__scrollwrap {
@@ -121,9 +125,9 @@
 }
 
 .md-content__inner {
-  max-width: 860px;
+  max-width: 1120px;
   margin: 0 auto;
-  padding: 1.8rem 2.1rem 2.4rem;
+  padding: 1.6rem 1.6rem 2.2rem;
 }
 
 .md-typeset {
@@ -197,11 +201,17 @@
 }
 
 .md-typeset .md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #1f232826;
   border-radius: var(--gh-radius);
   background: #f6f8fa;
   color: var(--gh-text);
   font-weight: 600;
+  line-height: 1.2;
+  padding: .42rem .72rem;
+  margin: .24rem .5rem .24rem 0;
   box-shadow: 0 1px 0 rgba(31, 35, 40, .04);
 }
 
@@ -229,7 +239,7 @@
 }
 
 .md-search__form {
-  background: #fff;
+  background: #eef1f4;
   border: 1px solid #57606a66;
   border-radius: var(--gh-radius);
 }
@@ -287,7 +297,13 @@
     min-height: 2.9rem;
   }
 
+  .md-sidebar--primary,
+  .md-sidebar--secondary {
+    width: auto;
+  }
+
   .md-content__inner {
+    max-width: 100%;
     padding: 1.18rem 1rem 1.6rem;
   }
 }
