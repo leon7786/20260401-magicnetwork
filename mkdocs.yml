@@ -32,12 +32,12 @@ nav:
   - Windows:
       - Clash Verge: windows/clash-verge/README.md
       - Mihomo Party: windows/mihomo-party/README.md
-      - FlClash: windows/flclash/README.md
-      - Clash Nyanpasu: windows/clash-nyanpasu/README.md
       - HiddifyNext: windows/hiddifynext/README.md
       - NekoRay: windows/nekoray/README.md
       - Karing: windows/karing/README.md
       - v2rayN: windows/v2rayn/README.md
+      - FlClash: windows/flclash/README.md
+      - Clash Nyanpasu（只支持 SS）: windows/clash-nyanpasu/README.md
   - Android:
       - v2rayNG: android/v2rayng/README.md
       - Clash Meta for Android: android/clash-meta-for-android/README.md
@@ -47,11 +47,11 @@ nav:
       - Surfboard: android/surfboard/README.md
   - macOS:
       - Mihomo Party: macos/mihomo-party/README.md
-      - FlClash: macos/flclash/README.md
-      - Clash Nyanpasu: macos/clash-nyanpasu/README.md
       - ClashX（已停更）: macos/clashx/README.md
       - HiddifyNext: macos/hiddifynext/README.md
       - NekoRay: macos/nekoray/README.md
+      - FlClash: macos/flclash/README.md
+      - Clash Nyanpasu（只支持 SS）: macos/clash-nyanpasu/README.md
   - iOS:
       - Shadowrocket（付费）: ios/shadowrocket/README.md
       - Quantumult X（付费）: ios/quantumult-x/README.md
