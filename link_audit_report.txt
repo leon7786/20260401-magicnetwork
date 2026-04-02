@@ -1,0 +1,129 @@
+URL RESULTS
+OK 200	https://apps.apple.com/us/app/shadowrocket/id932747118
+HTTP 404	https://apps.apple.com/us/search?term=Hiddify
+HTTP 404	https://apps.apple.com/us/search?term=Quantumult%20X
+HTTP 404	https://apps.apple.com/us/search?term=Stash%20proxy
+HTTP 404	https://apps.apple.com/us/search?term=sing-box
+OK 200	https://github.com/2dust/v2rayN
+OK 200	https://github.com/2dust/v2rayN/releases/latest
+OK 200	https://github.com/2dust/v2rayNG
+OK 200	https://github.com/2dust/v2rayNG/releases/latest
+OK 200	https://github.com/KaringX/karing
+OK 200	https://github.com/KaringX/karing/releases/latest
+OK 200	https://github.com/MatsuriDayo/NekoBoxForAndroid
+OK 200	https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/latest
+OK 200	https://github.com/MatsuriDayo/nekoray
+OK 200	https://github.com/MatsuriDayo/nekoray/releases/latest
+OK 200	https://github.com/MetaCubeX/ClashMetaForAndroid
+OK 200	https://github.com/MetaCubeX/ClashMetaForAndroid/releases/latest
+OK 200	https://github.com/SagerNet/sing-box
+OK 200	https://github.com/chen08209/FlClash
+OK 200	https://github.com/chen08209/FlClash/releases/latest
+OK 200	https://github.com/clash-verge-rev/clash-verge-rev
+OK 200	https://github.com/clash-verge-rev/clash-verge-rev/releases/latest
+OK 200	https://github.com/getsurfboard/surfboard
+OK 200	https://github.com/getsurfboard/surfboard/releases/latest
+OK 200	https://github.com/hiddify/hiddify-app
+OK 200	https://github.com/hiddify/hiddify-app/releases/latest
+OK 200	https://github.com/libnyanpasu/clash-nyanpasu
+OK 200	https://github.com/libnyanpasu/clash-nyanpasu/releases/latest
+OK 200	https://github.com/mihomo-party-org/clash-party
+OK 200	https://github.com/mihomo-party-org/clash-party/releases/latest
+
+BUTTON MATCH RESULTS
+macos/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-MacOS\.(dmg|pkg)$ | OK_MATCH:Hiddify-MacOS.dmg
+macos/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-MacOS-Intel\.(dmg|pkg)$ | NO_MATCH sample=[Hiddify-Android-arm64.apk, Hiddify-Android-arm7.apk, Hiddify-Android-universal.apk, Hiddify-Android-x86_64.apk, Hiddify-Debian-x64.deb]
+macos/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-MacOS\.(dmg|pkg)$ | OK_MATCH:Hiddify-MacOS.dmg
+macos/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-MacOS-Intel\.(dmg|pkg)$ | NO_MATCH sample=[Hiddify-Android-arm64.apk, Hiddify-Android-arm7.apk, Hiddify-Android-universal.apk, Hiddify-Android-x86_64.apk, Hiddify-Debian-x64.deb]
+macos/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-MacOS\.(dmg|pkg)$ | OK_MATCH:Hiddify-MacOS.dmg
+macos/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-MacOS-Intel\.(dmg|pkg)$ | NO_MATCH sample=[Hiddify-Android-arm64.apk, Hiddify-Android-arm7.apk, Hiddify-Android-universal.apk, Hiddify-Android-x86_64.apk, Hiddify-Debian-x64.deb]
+macos/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_aarch64\.dmg$ | OK_MATCH:Clash.Nyanpasu_1.6.1_aarch64.dmg
+macos/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_x64\.dmg$ | OK_MATCH:Clash.Nyanpasu_1.6.1_x64.dmg
+macos/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_aarch64\.dmg$ | OK_MATCH:Clash.Nyanpasu_1.6.1_aarch64.dmg
+macos/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_x64\.dmg$ | OK_MATCH:Clash.Nyanpasu_1.6.1_x64.dmg
+macos/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_aarch64\.dmg$ | OK_MATCH:Clash.Nyanpasu_1.6.1_aarch64.dmg
+macos/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_x64\.dmg$ | OK_MATCH:Clash.Nyanpasu_1.6.1_x64.dmg
+macos/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-macos-.*-arm64\.pkg$ | OK_MATCH:mihomo-party-macos-1.9.4-arm64.pkg
+macos/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-macos-.*-x64\.pkg$ | OK_MATCH:mihomo-party-macos-1.9.4-x64.pkg
+macos/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-macos-.*-arm64\.pkg$ | OK_MATCH:mihomo-party-macos-1.9.4-arm64.pkg
+macos/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-macos-.*-x64\.pkg$ | OK_MATCH:mihomo-party-macos-1.9.4-x64.pkg
+macos/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-macos-.*-arm64\.pkg$ | OK_MATCH:mihomo-party-macos-1.9.4-arm64.pkg
+macos/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-macos-.*-x64\.pkg$ | OK_MATCH:mihomo-party-macos-1.9.4-x64.pkg
+macos/flclash/README.md | chen08209/FlClash | FlClash-.*-macos-arm64\.dmg$ | OK_MATCH:FlClash-0.8.92-macos-arm64.dmg
+macos/flclash/README.md | chen08209/FlClash | FlClash-.*-macos-amd64\.dmg$ | OK_MATCH:FlClash-0.8.92-macos-amd64.dmg
+macos/flclash/README.md | chen08209/FlClash | FlClash-.*-macos-arm64\.dmg$ | OK_MATCH:FlClash-0.8.92-macos-arm64.dmg
+macos/flclash/README.md | chen08209/FlClash | FlClash-.*-macos-amd64\.dmg$ | OK_MATCH:FlClash-0.8.92-macos-amd64.dmg
+macos/flclash/README.md | chen08209/FlClash | FlClash-.*-macos-arm64\.dmg$ | OK_MATCH:FlClash-0.8.92-macos-arm64.dmg
+macos/flclash/README.md | chen08209/FlClash | FlClash-.*-macos-amd64\.dmg$ | OK_MATCH:FlClash-0.8.92-macos-amd64.dmg
+macos/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-macos-.*(arm64|aarch64).*(dmg|pkg|zip)$ | NO_MATCH sample=[nekoray-4.0.1-2024-12-12-debian-x64.deb, nekoray-4.0.1-2024-12-12-linux-x64.AppImage, nekoray-4.0.1-2024-12-12-linux64.zip, nekoray-4.0.1-2024-12-12-windows64.zip]
+macos/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-macos-.*(x64|intel).*(dmg|pkg|zip)$ | NO_MATCH sample=[nekoray-4.0.1-2024-12-12-debian-x64.deb, nekoray-4.0.1-2024-12-12-linux-x64.AppImage, nekoray-4.0.1-2024-12-12-linux64.zip, nekoray-4.0.1-2024-12-12-windows64.zip]
+macos/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-macos-.*(arm64|aarch64).*(dmg|pkg|zip)$ | NO_MATCH sample=[nekoray-4.0.1-2024-12-12-debian-x64.deb, nekoray-4.0.1-2024-12-12-linux-x64.AppImage, nekoray-4.0.1-2024-12-12-linux64.zip, nekoray-4.0.1-2024-12-12-windows64.zip]
+macos/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-macos-.*(x64|intel).*(dmg|pkg|zip)$ | NO_MATCH sample=[nekoray-4.0.1-2024-12-12-debian-x64.deb, nekoray-4.0.1-2024-12-12-linux-x64.AppImage, nekoray-4.0.1-2024-12-12-linux64.zip, nekoray-4.0.1-2024-12-12-windows64.zip]
+macos/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-macos-.*(arm64|aarch64).*(dmg|pkg|zip)$ | NO_MATCH sample=[nekoray-4.0.1-2024-12-12-debian-x64.deb, nekoray-4.0.1-2024-12-12-linux-x64.AppImage, nekoray-4.0.1-2024-12-12-linux64.zip, nekoray-4.0.1-2024-12-12-windows64.zip]
+macos/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-macos-.*(x64|intel).*(dmg|pkg|zip)$ | NO_MATCH sample=[nekoray-4.0.1-2024-12-12-debian-x64.deb, nekoray-4.0.1-2024-12-12-linux-x64.AppImage, nekoray-4.0.1-2024-12-12-linux64.zip, nekoray-4.0.1-2024-12-12-windows64.zip]
+android/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-Android-arm64\.apk$ | OK_MATCH:Hiddify-Android-arm64.apk
+android/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-Android-arm64\.apk$ | OK_MATCH:Hiddify-Android-arm64.apk
+android/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-Android-arm64\.apk$ | OK_MATCH:Hiddify-Android-arm64.apk
+android/clash-meta-for-android/README.md | MetaCubeX/ClashMetaForAndroid | cmfa-.*-meta-arm64-v8a-release\.apk$ | OK_MATCH:cmfa-2.11.25-meta-arm64-v8a-release.apk
+android/clash-meta-for-android/README.md | MetaCubeX/ClashMetaForAndroid | cmfa-.*-meta-arm64-v8a-release\.apk$ | OK_MATCH:cmfa-2.11.25-meta-arm64-v8a-release.apk
+android/clash-meta-for-android/README.md | MetaCubeX/ClashMetaForAndroid | cmfa-.*-meta-arm64-v8a-release\.apk$ | OK_MATCH:cmfa-2.11.25-meta-arm64-v8a-release.apk
+android/v2rayng/README.md | 2dust/v2rayNG | v2rayNG_.*_arm64-v8a\.apk$ | OK_MATCH:v2rayNG_2.0.15_arm64-v8a.apk
+android/v2rayng/README.md | 2dust/v2rayNG | v2rayNG_.*_arm64-v8a\.apk$ | OK_MATCH:v2rayNG_2.0.15_arm64-v8a.apk
+android/v2rayng/README.md | 2dust/v2rayNG | v2rayNG_.*_arm64-v8a\.apk$ | OK_MATCH:v2rayNG_2.0.15_arm64-v8a.apk
+android/nekobox-for-android/README.md | MatsuriDayo/NekoBoxForAndroid | NekoBox-.*-arm64-v8a\.apk$ | OK_MATCH:NekoBox-1.4.2-arm64-v8a.apk
+android/nekobox-for-android/README.md | MatsuriDayo/NekoBoxForAndroid | NekoBox-.*-arm64-v8a\.apk$ | OK_MATCH:NekoBox-1.4.2-arm64-v8a.apk
+android/nekobox-for-android/README.md | MatsuriDayo/NekoBoxForAndroid | NekoBox-.*-arm64-v8a\.apk$ | OK_MATCH:NekoBox-1.4.2-arm64-v8a.apk
+android/surfboard/README.md | getsurfboard/surfboard | mobile-arm64-v8a-release\.apk$ | OK_MATCH:mobile-arm64-v8a-release.apk
+android/surfboard/README.md | getsurfboard/surfboard | mobile-arm64-v8a-release\.apk$ | OK_MATCH:mobile-arm64-v8a-release.apk
+android/surfboard/README.md | getsurfboard/surfboard | mobile-arm64-v8a-release\.apk$ | OK_MATCH:mobile-arm64-v8a-release.apk
+android/karing/README.md | KaringX/karing | karing_.*_android_arm64-v8a\.apk$ | OK_MATCH:karing_1.2.15.1806_android_arm64-v8a.apk
+android/karing/README.md | KaringX/karing | karing_.*_android_arm64-v8a\.apk$ | OK_MATCH:karing_1.2.15.1806_android_arm64-v8a.apk
+android/karing/README.md | KaringX/karing | karing_.*_android_arm64-v8a\.apk$ | OK_MATCH:karing_1.2.15.1806_android_arm64-v8a.apk
+windows/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-Windows-Setup-x64\.exe$ | OK_MATCH:Hiddify-Windows-Setup-x64.exe
+windows/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-Windows-Portable-x64\.zip$ | OK_MATCH:Hiddify-Windows-Portable-x64.zip
+windows/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-Windows-Setup-x64\.exe$ | OK_MATCH:Hiddify-Windows-Setup-x64.exe
+windows/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-Windows-Portable-x64\.zip$ | OK_MATCH:Hiddify-Windows-Portable-x64.zip
+windows/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-Windows-Setup-x64\.exe$ | OK_MATCH:Hiddify-Windows-Setup-x64.exe
+windows/hiddifynext/README.md | hiddify/hiddify-app | Hiddify-Windows-Portable-x64\.zip$ | OK_MATCH:Hiddify-Windows-Portable-x64.zip
+windows/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_x64-setup\.exe$ | OK_MATCH:Clash.Nyanpasu_1.6.1_x64-setup.exe
+windows/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_x64_portable\.zip$ | OK_MATCH:Clash.Nyanpasu_1.6.1_x64_portable.zip
+windows/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_x64-setup\.exe$ | OK_MATCH:Clash.Nyanpasu_1.6.1_x64-setup.exe
+windows/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_x64_portable\.zip$ | OK_MATCH:Clash.Nyanpasu_1.6.1_x64_portable.zip
+windows/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_x64-setup\.exe$ | OK_MATCH:Clash.Nyanpasu_1.6.1_x64-setup.exe
+windows/clash-nyanpasu/README.md | libnyanpasu/clash-nyanpasu | Clash\.Nyanpasu_.*_x64_portable\.zip$ | OK_MATCH:Clash.Nyanpasu_1.6.1_x64_portable.zip
+windows/v2rayn/README.md | 2dust/v2rayN | v2rayN-windows-64-desktop\.zip$ | OK_MATCH:v2rayN-windows-64-desktop.zip
+windows/v2rayn/README.md | 2dust/v2rayN | v2rayN-windows-64\.zip$ | OK_MATCH:v2rayN-windows-64.zip
+windows/v2rayn/README.md | 2dust/v2rayN | v2rayN-windows-64-desktop\.zip$ | OK_MATCH:v2rayN-windows-64-desktop.zip
+windows/v2rayn/README.md | 2dust/v2rayN | v2rayN-windows-64\.zip$ | OK_MATCH:v2rayN-windows-64.zip
+windows/v2rayn/README.md | 2dust/v2rayN | v2rayN-windows-64-desktop\.zip$ | OK_MATCH:v2rayN-windows-64-desktop.zip
+windows/v2rayn/README.md | 2dust/v2rayN | v2rayN-windows-64\.zip$ | OK_MATCH:v2rayN-windows-64.zip
+windows/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-windows-.*-x64-setup\.exe$ | OK_MATCH:mihomo-party-windows-1.9.4-x64-setup.exe
+windows/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-windows-.*-x64-portable\.7z$ | OK_MATCH:mihomo-party-windows-1.9.4-x64-portable.7z
+windows/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-windows-.*-x64-setup\.exe$ | OK_MATCH:mihomo-party-windows-1.9.4-x64-setup.exe
+windows/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-windows-.*-x64-portable\.7z$ | OK_MATCH:mihomo-party-windows-1.9.4-x64-portable.7z
+windows/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-windows-.*-x64-setup\.exe$ | OK_MATCH:mihomo-party-windows-1.9.4-x64-setup.exe
+windows/mihomo-party/README.md | mihomo-party-org/clash-party | mihomo-party-windows-.*-x64-portable\.7z$ | OK_MATCH:mihomo-party-windows-1.9.4-x64-portable.7z
+windows/flclash/README.md | chen08209/FlClash | FlClash-.*-windows-amd64-setup\.exe$ | OK_MATCH:FlClash-0.8.92-windows-amd64-setup.exe
+windows/flclash/README.md | chen08209/FlClash | FlClash-.*-windows-amd64\.zip$ | OK_MATCH:FlClash-0.8.92-windows-amd64.zip
+windows/flclash/README.md | chen08209/FlClash | FlClash-.*-windows-amd64-setup\.exe$ | OK_MATCH:FlClash-0.8.92-windows-amd64-setup.exe
+windows/flclash/README.md | chen08209/FlClash | FlClash-.*-windows-amd64\.zip$ | OK_MATCH:FlClash-0.8.92-windows-amd64.zip
+windows/flclash/README.md | chen08209/FlClash | FlClash-.*-windows-amd64-setup\.exe$ | OK_MATCH:FlClash-0.8.92-windows-amd64-setup.exe
+windows/flclash/README.md | chen08209/FlClash | FlClash-.*-windows-amd64\.zip$ | OK_MATCH:FlClash-0.8.92-windows-amd64.zip
+windows/clash-verge/README.md | clash-verge-rev/clash-verge-rev | Clash\.Verge_.*_x64-setup\.exe$ | OK_MATCH:Clash.Verge_2.4.7_x64-setup.exe
+windows/clash-verge/README.md | clash-verge-rev/clash-verge-rev | Clash\.Verge_.*_x64.*portable.*\.(zip|7z)$ | NO_MATCH sample=[Clash.Verge-2.4.7-1.aarch64.rpm, Clash.Verge-2.4.7-1.armhfp.rpm, Clash.Verge-2.4.7-1.x86_64.rpm, Clash.Verge-2.4.7-1.x86_64.rpm.sig, Clash.Verge_2.4.7_aarch64.dmg]
+windows/clash-verge/README.md | clash-verge-rev/clash-verge-rev | Clash\.Verge_.*_x64-setup\.exe$ | OK_MATCH:Clash.Verge_2.4.7_x64-setup.exe
+windows/clash-verge/README.md | clash-verge-rev/clash-verge-rev | Clash\.Verge_.*_x64.*portable.*\.(zip|7z)$ | NO_MATCH sample=[Clash.Verge-2.4.7-1.aarch64.rpm, Clash.Verge-2.4.7-1.armhfp.rpm, Clash.Verge-2.4.7-1.x86_64.rpm, Clash.Verge-2.4.7-1.x86_64.rpm.sig, Clash.Verge_2.4.7_aarch64.dmg]
+windows/clash-verge/README.md | clash-verge-rev/clash-verge-rev | Clash\.Verge_.*_x64-setup\.exe$ | OK_MATCH:Clash.Verge_2.4.7_x64-setup.exe
+windows/clash-verge/README.md | clash-verge-rev/clash-verge-rev | Clash\.Verge_.*_x64.*portable.*\.(zip|7z)$ | NO_MATCH sample=[Clash.Verge-2.4.7-1.aarch64.rpm, Clash.Verge-2.4.7-1.armhfp.rpm, Clash.Verge-2.4.7-1.x86_64.rpm, Clash.Verge-2.4.7-1.x86_64.rpm.sig, Clash.Verge_2.4.7_aarch64.dmg]
+windows/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-windows64-setup\.(zip|exe)$ | NO_MATCH sample=[nekoray-4.0.1-2024-12-12-debian-x64.deb, nekoray-4.0.1-2024-12-12-linux-x64.AppImage, nekoray-4.0.1-2024-12-12-linux64.zip, nekoray-4.0.1-2024-12-12-windows64.zip]
+windows/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-windows64\.zip$ | OK_MATCH:nekoray-4.0.1-2024-12-12-windows64.zip
+windows/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-windows64-setup\.(zip|exe)$ | NO_MATCH sample=[nekoray-4.0.1-2024-12-12-debian-x64.deb, nekoray-4.0.1-2024-12-12-linux-x64.AppImage, nekoray-4.0.1-2024-12-12-linux64.zip, nekoray-4.0.1-2024-12-12-windows64.zip]
+windows/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-windows64\.zip$ | OK_MATCH:nekoray-4.0.1-2024-12-12-windows64.zip
+windows/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-windows64-setup\.(zip|exe)$ | NO_MATCH sample=[nekoray-4.0.1-2024-12-12-debian-x64.deb, nekoray-4.0.1-2024-12-12-linux-x64.AppImage, nekoray-4.0.1-2024-12-12-linux64.zip, nekoray-4.0.1-2024-12-12-windows64.zip]
+windows/nekoray/README.md | MatsuriDayo/nekoray | nekoray-.*-windows64\.zip$ | OK_MATCH:nekoray-4.0.1-2024-12-12-windows64.zip
+windows/karing/README.md | KaringX/karing | karing_.*_windows_x64\.exe$ | OK_MATCH:karing_1.2.15.1806_windows_x64.exe
+windows/karing/README.md | KaringX/karing | karing_.*_windows_x64\.zip$ | OK_MATCH:karing_1.2.15.1806_windows_x64.zip
+windows/karing/README.md | KaringX/karing | karing_.*_windows_x64\.exe$ | OK_MATCH:karing_1.2.15.1806_windows_x64.exe
+windows/karing/README.md | KaringX/karing | karing_.*_windows_x64\.zip$ | OK_MATCH:karing_1.2.15.1806_windows_x64.zip
+windows/karing/README.md | KaringX/karing | karing_.*_windows_x64\.exe$ | OK_MATCH:karing_1.2.15.1806_windows_x64.exe
+windows/karing/README.md | KaringX/karing | karing_.*_windows_x64\.zip$ | OK_MATCH:karing_1.2.15.1806_windows_x64.zip
