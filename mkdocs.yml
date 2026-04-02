@@ -39,8 +39,8 @@ nav:
       - FlClash: windows/flclash/README.md
       - Clash Nyanpasu（只支持 SS）: windows/clash-nyanpasu/README.md
   - Android:
-      - v2rayNG: android/v2rayng/README.md
       - Clash Meta for Android: android/clash-meta-for-android/README.md
+      - v2rayNG: android/v2rayng/README.md
       - NekoBox for Android: android/nekobox-for-android/README.md
       - HiddifyNext: android/hiddifynext/README.md
       - Karing: android/karing/README.md
