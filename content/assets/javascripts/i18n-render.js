@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const navReplacements = {
     en: [
-      ['iOS', 'iOS'],
       ['（付费）', '(Paid)'],
       ['（免费）', '(Free)'],
       ['（已停更）', '(Archived)']
@@ -35,23 +34,36 @@ document.addEventListener('DOMContentLoaded', () => {
     );
   };
 
-  const applyExplicitBlocks = () => {
-    const article = document.querySelector('article.md-content__inner.md-typeset');
-    if (!article) return;
+  const applyDataLangBlocks = (root) => {
+    const blocks = Array.from(root.querySelectorAll('[data-lang-block]'));
+    if (!blocks.length) return { applied: false, hiddenIds: new Set() };
 
-    const langHeaders = Array.from(article.querySelectorAll('h3')).filter((h) => {
+    const hiddenIds = new Set();
+    blocks.forEach((block) => {
+      const lang = block.getAttribute('data-lang-block');
+      const visible = lang === locale;
+      block.style.display = visible ? '' : 'none';
+      if (!visible && block.id) hiddenIds.add(block.id);
+    });
+
+    return { applied: true, hiddenIds };
+  };
+
+  const applyHeadingMarkerBlocks = (root) => {
+    const hiddenIds = new Set();
+    const markers = Array.from(root.querySelectorAll('h1, h2, h3, h4')).filter((h) => {
       const t = (h.textContent || '').trim();
       return t === '[zh-Hans]' || t === '[zh-Hant-TW]' || t === '[en]';
     });
 
-    if (!langHeaders.length) return;
+    if (!markers.length) return { applied: false, hiddenIds };
 
     const groups = [];
-    langHeaders.forEach((header, idx) => {
-      const lang = (header.textContent || '').trim().slice(1, -1);
-      const endNode = idx + 1 < langHeaders.length ? langHeaders[idx + 1] : null;
+    markers.forEach((marker, idx) => {
+      const lang = (marker.textContent || '').trim().slice(1, -1);
+      const endNode = idx + 1 < markers.length ? markers[idx + 1] : null;
       const nodes = [];
-      let cur = header;
+      let cur = marker;
       while (cur && cur !== endNode) {
         nodes.push(cur);
         cur = cur.nextElementSibling;
@@ -64,11 +76,45 @@ document.addEventListener('DOMContentLoaded', () => {
       nodes.forEach((n, i) => {
         if (i === 0) {
           n.style.display = 'none';
-        } else {
-          n.style.display = visible ? '' : 'none';
+          return;
         }
+        n.style.display = visible ? '' : 'none';
+        if (!visible && n.id) hiddenIds.add(n.id);
       });
     });
+
+    return { applied: true, hiddenIds };
+  };
+
+  const hideTocEntries = (hiddenIds) => {
+    const tocLinks = document.querySelectorAll('.md-nav--secondary a.md-nav__link');
+    tocLinks.forEach((link) => {
+      const text = (link.textContent || '').trim();
+      const href = link.getAttribute('href') || '';
+      const hashId = href.startsWith('#') ? href.slice(1) : '';
+      const isLangMarker = text === '[zh-Hans]' || text === '[zh-Hant-TW]' || text === '[en]';
+      const hideById = hashId && hiddenIds.has(hashId);
+      if (isLangMarker || hideById) {
+        const li = link.closest('.md-nav__item');
+        if (li) li.style.display = 'none';
+      }
+    });
+  };
+
+  const applyExplicitBlocks = () => {
+    const root = document.querySelector('.md-content__inner');
+    if (!root) return;
+
+    const byDataLang = applyDataLangBlocks(root);
+    if (byDataLang.applied) {
+      hideTocEntries(byDataLang.hiddenIds);
+      return;
+    }
+
+    const byMarkers = applyHeadingMarkerBlocks(root);
+    if (byMarkers.applied) {
+      hideTocEntries(byMarkers.hiddenIds);
+    }
   };
 
   const localizeNav = () => {
