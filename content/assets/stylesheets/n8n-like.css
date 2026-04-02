@@ -201,7 +201,7 @@
 }
 
 .md-typeset .md-button {
-  display: flex;
+  display: block;
   width: fit-content;
   align-items: center;
   justify-content: center;
@@ -212,7 +212,7 @@
   font-weight: 600;
   line-height: 1.2;
   padding: .42rem .72rem;
-  margin: .48rem 0;
+  margin: .9rem 0 .45rem;
   box-shadow: 0 1px 0 rgba(31, 35, 40, .04);
 }
 

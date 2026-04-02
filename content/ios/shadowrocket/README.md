@@ -10,7 +10,6 @@ Shadowrocket 是 iOS 端常见的高级付费代理客户端。
 
 <a class="md-button md-button--primary" href="https://apps.apple.com/us/app/shadowrocket/id932747118" target="_blank" rel="noopener">App Store</a>
 
-- iOS 端通常不通过 GitHub Release 分发。
 
 ### [zh-Hant-TW]
 
@@ -22,7 +21,6 @@ Shadowrocket 是 iOS 端常見的高階付費代理客戶端。
 
 <a class="md-button md-button--primary" href="https://apps.apple.com/us/app/shadowrocket/id932747118" target="_blank" rel="noopener">App Store</a>
 
-- iOS 端通常不透過 GitHub Release 發佈。
 
 ### [en]
 
@@ -35,4 +33,3 @@ Shadowrocket is a popular premium proxy client on iOS.
 
 <a class="md-button md-button--primary" href="https://apps.apple.com/us/app/shadowrocket/id932747118" target="_blank" rel="noopener">App Store</a>
 
-- iOS apps are usually distributed through the App Store, not GitHub Releases.
