@@ -216,21 +216,16 @@
 }
 
 .md-typeset a[href^="https://"]:not(.md-button) {
-  display: inline-block;
-  border: 1px solid #1f232826;
-  border-radius: var(--gh-radius);
-  background: #f6f8fa;
-  color: var(--gh-text);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: .82rem;
-  padding: .18rem .5rem;
-  margin: .08rem .2rem .08rem 0;
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #000;
+  text-underline-offset: 2px;
+  font-weight: 400;
 }
 
 .md-typeset a[href^="https://"]:not(.md-button):hover {
-  border-color: var(--gh-border);
-  background: #eef2f6;
+  color: #000;
+  text-decoration-color: #000;
 }
 
 .md-search__form {
