@@ -145,6 +145,15 @@
   margin: .22rem 0;
 }
 
+.md-typeset li:has(> a[href^="https://"]) {
+  font-size: .86rem;
+  color: var(--gh-muted);
+}
+
+.md-typeset li:has(> a[href^="https://"]) > a[href^="https://"] {
+  font-size: .86rem;
+}
+
 .md-typeset h1 {
   font-size: 2rem;
   font-weight: 700;
