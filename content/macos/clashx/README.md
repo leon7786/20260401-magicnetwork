@@ -6,8 +6,7 @@
 
 ClashX 是 macOS 上常见的 Clash 图形客户端之一。
 
-- GitHub: https://github.com/ClashX-Pro/ClashX
-
+- GitHub: <a href="https://github.com/ClashX-Pro/ClashX" target="_blank" rel="noopener">https://github.com/ClashX-Pro/ClashX</a>
 <a class="md-button md-button--primary" href="https://github.com/ClashX-Pro/ClashX/releases/latest" target="_blank" rel="noopener">macOS 下载</a>
 
 ### [zh-Hant-TW]
@@ -16,8 +15,7 @@ ClashX 是 macOS 上常见的 Clash 图形客户端之一。
 
 ClashX 是 macOS 上常見的 Clash 圖形化客戶端之一。
 
-- GitHub: https://github.com/ClashX-Pro/ClashX
-
+- GitHub: <a href="https://github.com/ClashX-Pro/ClashX" target="_blank" rel="noopener">https://github.com/ClashX-Pro/ClashX</a>
 <a class="md-button md-button--primary" href="https://github.com/ClashX-Pro/ClashX/releases/latest" target="_blank" rel="noopener">macOS 下載</a>
 
 ### [en]
@@ -26,6 +24,5 @@ ClashX 是 macOS 上常見的 Clash 圖形化客戶端之一。
 
 ClashX is one of the common Clash GUI clients on macOS.
 
-- GitHub: https://github.com/ClashX-Pro/ClashX
-
+- GitHub: <a href="https://github.com/ClashX-Pro/ClashX" target="_blank" rel="noopener">https://github.com/ClashX-Pro/ClashX</a>
 <a class="md-button md-button--primary" href="https://github.com/ClashX-Pro/ClashX/releases/latest" target="_blank" rel="noopener">macOS Download</a>

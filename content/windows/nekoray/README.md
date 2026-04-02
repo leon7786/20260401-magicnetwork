@@ -6,9 +6,8 @@
 
 NekoRay 是常见的桌面全能代理客户端，支持 sing-box 与多种协议配置。
 
-- GitHub: https://github.com/MatsuriDayo/nekoray
-- Latest Release: https://github.com/MatsuriDayo/nekoray/releases/latest
-
+- GitHub: <a href="https://github.com/MatsuriDayo/nekoray" target="_blank" rel="noopener">https://github.com/MatsuriDayo/nekoray</a>
+- Latest Release: <a href="https://github.com/MatsuriDayo/nekoray/releases/latest" target="_blank" rel="noopener">https://github.com/MatsuriDayo/nekoray/releases/latest</a>
 <a class="md-button md-button--primary download-latest" data-repo="MatsuriDayo/nekoray" data-match="nekoray-.*-windows64-setup\.(zip|exe)$" data-fallback="https://github.com/MatsuriDayo/nekoray/releases/latest">Windows x64 *安装版</a>
 <a class="md-button download-latest" data-repo="MatsuriDayo/nekoray" data-match="nekoray-.*-windows64\.zip$" data-fallback="https://github.com/MatsuriDayo/nekoray/releases/latest">Windows x64 便携版</a>
 
@@ -20,9 +19,8 @@ NekoRay 是常见的桌面全能代理客户端，支持 sing-box 与多种协�
 
 NekoRay 是常見的桌面全能代理客戶端，支援 sing-box 與多種協議設定。
 
-- GitHub: https://github.com/MatsuriDayo/nekoray
-- Latest Release: https://github.com/MatsuriDayo/nekoray/releases/latest
-
+- GitHub: <a href="https://github.com/MatsuriDayo/nekoray" target="_blank" rel="noopener">https://github.com/MatsuriDayo/nekoray</a>
+- Latest Release: <a href="https://github.com/MatsuriDayo/nekoray/releases/latest" target="_blank" rel="noopener">https://github.com/MatsuriDayo/nekoray/releases/latest</a>
 <a class="md-button md-button--primary download-latest" data-repo="MatsuriDayo/nekoray" data-match="nekoray-.*-windows64-setup\.(zip|exe)$" data-fallback="https://github.com/MatsuriDayo/nekoray/releases/latest">Windows x64 *安裝版</a>
 <a class="md-button download-latest" data-repo="MatsuriDayo/nekoray" data-match="nekoray-.*-windows64\.zip$" data-fallback="https://github.com/MatsuriDayo/nekoray/releases/latest">Windows x64 可攜版</a>
 
@@ -35,8 +33,7 @@ NekoRay 是常見的桌面全能代理客戶端，支援 sing-box 與多種協�
 
 NekoRay is a popular desktop all-in-one proxy client supporting sing-box and multiple protocols.
 
-- GitHub: https://github.com/MatsuriDayo/nekoray
-- Latest Release: https://github.com/MatsuriDayo/nekoray/releases/latest
-
+- GitHub: <a href="https://github.com/MatsuriDayo/nekoray" target="_blank" rel="noopener">https://github.com/MatsuriDayo/nekoray</a>
+- Latest Release: <a href="https://github.com/MatsuriDayo/nekoray/releases/latest" target="_blank" rel="noopener">https://github.com/MatsuriDayo/nekoray/releases/latest</a>
 <a class="md-button md-button--primary download-latest" data-repo="MatsuriDayo/nekoray" data-match="nekoray-.*-windows64-setup\.(zip|exe)$" data-fallback="https://github.com/MatsuriDayo/nekoray/releases/latest">Windows x64 *Installer</a>
 <a class="md-button download-latest" data-repo="MatsuriDayo/nekoray" data-match="nekoray-.*-windows64\.zip$" data-fallback="https://github.com/MatsuriDayo/nekoray/releases/latest">Windows x64 Portable</a>

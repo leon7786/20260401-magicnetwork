@@ -6,9 +6,8 @@
 
 Mihomo Party 是基于 Mihomo 内核的桌面客户端，支持规则分流和可视化配置。
 
-- GitHub: https://github.com/mihomo-party-org/clash-party
-- Latest Release: https://github.com/mihomo-party-org/clash-party/releases/latest
-
+- GitHub: <a href="https://github.com/mihomo-party-org/clash-party" target="_blank" rel="noopener">https://github.com/mihomo-party-org/clash-party</a>
+- Latest Release: <a href="https://github.com/mihomo-party-org/clash-party/releases/latest" target="_blank" rel="noopener">https://github.com/mihomo-party-org/clash-party/releases/latest</a>
 <a class="md-button md-button--primary download-latest" data-repo="mihomo-party-org/clash-party" data-match="mihomo-party-windows-.*-x64-setup\.exe$" data-fallback="https://github.com/mihomo-party-org/clash-party/releases/latest">Windows x64 *安装版</a>
 <a class="md-button download-latest" data-repo="mihomo-party-org/clash-party" data-match="mihomo-party-windows-.*-x64-portable\.7z$" data-fallback="https://github.com/mihomo-party-org/clash-party/releases/latest">Windows x64 便携版</a>
 
@@ -18,9 +17,8 @@ Mihomo Party 是基于 Mihomo 内核的桌面客户端，支持规则分流和�
 
 Mihomo Party 是基于 Mihomo 内核的桌面客戶端，支援規則分流和視覺化設定。
 
-- GitHub: https://github.com/mihomo-party-org/clash-party
-- Latest Release: https://github.com/mihomo-party-org/clash-party/releases/latest
-
+- GitHub: <a href="https://github.com/mihomo-party-org/clash-party" target="_blank" rel="noopener">https://github.com/mihomo-party-org/clash-party</a>
+- Latest Release: <a href="https://github.com/mihomo-party-org/clash-party/releases/latest" target="_blank" rel="noopener">https://github.com/mihomo-party-org/clash-party/releases/latest</a>
 <a class="md-button md-button--primary download-latest" data-repo="mihomo-party-org/clash-party" data-match="mihomo-party-windows-.*-x64-setup\.exe$" data-fallback="https://github.com/mihomo-party-org/clash-party/releases/latest">Windows x64 *安裝版</a>
 <a class="md-button download-latest" data-repo="mihomo-party-org/clash-party" data-match="mihomo-party-windows-.*-x64-portable\.7z$" data-fallback="https://github.com/mihomo-party-org/clash-party/releases/latest">Windows x64 可攜版</a>
 
@@ -31,8 +29,7 @@ Mihomo Party 是基于 Mihomo 内核的桌面客戶端，支援規則分流和�
 
 Mihomo Party is a Mihomo-based desktop client with rule routing and GUI configuration.
 
-- GitHub: https://github.com/mihomo-party-org/clash-party
-- Latest Release: https://github.com/mihomo-party-org/clash-party/releases/latest
-
+- GitHub: <a href="https://github.com/mihomo-party-org/clash-party" target="_blank" rel="noopener">https://github.com/mihomo-party-org/clash-party</a>
+- Latest Release: <a href="https://github.com/mihomo-party-org/clash-party/releases/latest" target="_blank" rel="noopener">https://github.com/mihomo-party-org/clash-party/releases/latest</a>
 <a class="md-button md-button--primary download-latest" data-repo="mihomo-party-org/clash-party" data-match="mihomo-party-windows-.*-x64-setup\.exe$" data-fallback="https://github.com/mihomo-party-org/clash-party/releases/latest">Windows x64 *Installer</a>
 <a class="md-button download-latest" data-repo="mihomo-party-org/clash-party" data-match="mihomo-party-windows-.*-x64-portable\.7z$" data-fallback="https://github.com/mihomo-party-org/clash-party/releases/latest">Windows x64 Portable</a>
