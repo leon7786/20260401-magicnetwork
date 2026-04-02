@@ -47,11 +47,12 @@ nav:
       - Surfboard: android/surfboard/README.md
   - macOS:
       - Mihomo Party: macos/mihomo-party/README.md
-      - ClashX（已停更）: macos/clashx/README.md
+      - Clash Verge: macos/clash-verge/README.md
       - HiddifyNext: macos/hiddifynext/README.md
-      - NekoRay: macos/nekoray/README.md
       - FlClash: macos/flclash/README.md
       - Clash Nyanpasu（只支持 SS）: macos/clash-nyanpasu/README.md
+      - NekoRay: macos/nekoray/README.md
+      - ClashX（已停更）: macos/clashx/README.md
   - iOS:
       - Shadowrocket（付费）: ios/shadowrocket/README.md
       - Quantumult X（付费）: ios/quantumult-x/README.md
