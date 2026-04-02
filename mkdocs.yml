@@ -37,13 +37,6 @@ nav:
       - FlClash: windows/flclash/README.md
       - Clash Nyanpasu（只支持 SS）: windows/clash-nyanpasu/README.md
       - Karing（模拟客户端）: windows/karing/README.md
-  - Android:
-      - Clash Meta for Android: android/clash-meta-for-android/README.md
-      - v2rayNG: android/v2rayng/README.md
-      - NekoBox for Android: android/nekobox-for-android/README.md
-      - HiddifyNext: android/hiddifynext/README.md
-      - Surfboard: android/surfboard/README.md
-      - Karing（模拟客户端）: android/karing/README.md
   - macOS:
       - Mihomo Party: macos/mihomo-party/README.md
       - Clash Verge: macos/clash-verge/README.md
@@ -51,7 +44,14 @@ nav:
       - FlClash: macos/flclash/README.md
       - Clash Nyanpasu（只支持 SS）: macos/clash-nyanpasu/README.md
       - ClashX: macos/clashx/README.md
-  - iOS:
+  - 📱 Android:
+      - Clash Meta for Android: android/clash-meta-for-android/README.md
+      - v2rayNG: android/v2rayng/README.md
+      - NekoBox for Android: android/nekobox-for-android/README.md
+      - HiddifyNext: android/hiddifynext/README.md
+      - Surfboard: android/surfboard/README.md
+      - Karing（模拟客户端）: android/karing/README.md
+  - 📱 iOS:
       - Shadowrocket（付费）: ios/shadowrocket/README.md
       - Quantumult X（付费）: ios/quantumult-x/README.md
       - sing-box（免费）: ios/sing-box/README.md
