@@ -3,7 +3,7 @@ site_url: https://leon7786.github.io/20260401-magicnetwork/
 repo_url: https://github.com/leon7786/20260401-magicnetwork
 repo_name: leon7786/20260401-magicnetwork
 
-docs_dir: docs
+docs_dir: content
 
 extra_css:
   - assets/stylesheets/n8n-like.css
@@ -14,7 +14,7 @@ extra_javascript:
 
 theme:
   name: material
-  custom_dir: overrides
+  custom_dir: content/overrides
   language: zh
   palette:
     - scheme: default
@@ -25,34 +25,45 @@ theme:
     - navigation.sections
     - navigation.expand
     - toc.integrate
+    - search.suggest
+    - search.highlight
 
 nav:
-  - Windows / Desktop:
-      - Clash Verge: windows/clash-verge/clash-verge.md
-      - Mihomo Party: windows/mihomo-party/mihomo-party.md
-      - FlClash: windows/flclash/flclash.md
-      - Clash Nyanpasu: windows/clash-nyanpasu/clash-nyanpasu.md
-      - HiddifyNext: windows/hiddifynext/hiddifynext.md
-      - NekoRay / Nekoray: windows/nekoray/nekoray.md
-      - Karing: windows/karing/karing.md
-      - v2rayN: windows/v2rayn/v2rayn.md
+  - Windows:
+      - Home: index.md
+      - Overview: windows/intro.md
+      - Clash Verge: windows/clash-verge/README.md
+      - Mihomo Party: windows/mihomo-party/README.md
+      - FlClash: windows/flclash/README.md
+      - Clash Nyanpasu: windows/clash-nyanpasu/README.md
+      - HiddifyNext: windows/hiddifynext/README.md
+      - NekoRay: windows/nekoray/README.md
+      - Karing: windows/karing/README.md
+      - v2rayN: windows/v2rayn/README.md
+      - Client index: reference/client-index.md
+      - Download policy: reference/download-policy.md
+      - FAQ: reference/faq.md
+      - Troubleshooting: reference/troubleshooting.md
   - Android:
-      - v2rayNG: android/v2rayng/v2rayng.md
-      - Clash Meta for Android: android/clash-meta-for-android/clash-meta-for-android.md
-      - NekoBox for Android: android/nekobox-for-android/nekobox-for-android.md
-      - HiddifyNext: android/hiddifynext/hiddifynext.md
-      - Karing: android/karing/karing.md
-      - Surfboard: android/surfboard/surfboard.md
+      - Overview: android/intro.md
+      - v2rayNG: android/v2rayng/README.md
+      - Clash Meta for Android: android/clash-meta-for-android/README.md
+      - NekoBox for Android: android/nekobox-for-android/README.md
+      - HiddifyNext: android/hiddifynext/README.md
+      - Karing: android/karing/README.md
+      - Surfboard: android/surfboard/README.md
   - macOS:
-      - Mihomo Party: macos/mihomo-party/mihomo-party.md
-      - FlClash: macos/flclash/flclash.md
-      - Clash Nyanpasu: macos/clash-nyanpasu/clash-nyanpasu.md
-      - ClashX（已停更）: macos/clashx/clashx.md
-      - HiddifyNext: macos/hiddifynext/hiddifynext.md
-      - NekoRay: macos/nekoray/nekoray.md
-  - iOS / iPadOS:
-      - Shadowrocket（付费）: ios/shadowrocket/shadowrocket.md
-      - Quantumult X（付费）: ios/quantumult-x/quantumult-x.md
-      - Stash: ios/stash/stash.md
-      - HiddifyNext（免费）: ios/hiddifynext/hiddifynext.md
-      - sing-box（免费）: ios/sing-box/sing-box.md
+      - Overview: macos/intro.md
+      - Mihomo Party: macos/mihomo-party/README.md
+      - FlClash: macos/flclash/README.md
+      - Clash Nyanpasu: macos/clash-nyanpasu/README.md
+      - ClashX（已停更）: macos/clashx/README.md
+      - HiddifyNext: macos/hiddifynext/README.md
+      - NekoRay: macos/nekoray/README.md
+  - iOS:
+      - Overview: ios/intro.md
+      - Shadowrocket（付费）: ios/shadowrocket/README.md
+      - Quantumult X（付费）: ios/quantumult-x/README.md
+      - Stash: ios/stash/README.md
+      - HiddifyNext（免费）: ios/hiddifynext/README.md
+      - sing-box（免费）: ios/sing-box/README.md
