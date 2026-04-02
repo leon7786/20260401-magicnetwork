@@ -29,28 +29,32 @@ theme:
     - search.highlight
 
 nav:
-  - Windows / Clash Verge: windows/clash-verge/README.md
-  - Windows / Mihomo Party: windows/mihomo-party/README.md
-  - Windows / FlClash: windows/flclash/README.md
-  - Windows / Clash Nyanpasu: windows/clash-nyanpasu/README.md
-  - Windows / HiddifyNext: windows/hiddifynext/README.md
-  - Windows / NekoRay: windows/nekoray/README.md
-  - Windows / Karing: windows/karing/README.md
-  - Windows / v2rayN: windows/v2rayn/README.md
-  - Android / v2rayNG: android/v2rayng/README.md
-  - Android / Clash Meta for Android: android/clash-meta-for-android/README.md
-  - Android / NekoBox for Android: android/nekobox-for-android/README.md
-  - Android / HiddifyNext: android/hiddifynext/README.md
-  - Android / Karing: android/karing/README.md
-  - Android / Surfboard: android/surfboard/README.md
-  - macOS / Mihomo Party: macos/mihomo-party/README.md
-  - macOS / FlClash: macos/flclash/README.md
-  - macOS / Clash Nyanpasu: macos/clash-nyanpasu/README.md
-  - macOS / ClashX（已停更）: macos/clashx/README.md
-  - macOS / HiddifyNext: macos/hiddifynext/README.md
-  - macOS / NekoRay: macos/nekoray/README.md
-  - iOS / Shadowrocket（付费）: ios/shadowrocket/README.md
-  - iOS / Quantumult X（付费）: ios/quantumult-x/README.md
-  - iOS / Stash: ios/stash/README.md
-  - iOS / HiddifyNext（免费）: ios/hiddifynext/README.md
-  - iOS / sing-box（免费）: ios/sing-box/README.md
+  - Windows:
+      - Clash Verge: windows/clash-verge/README.md
+      - Mihomo Party: windows/mihomo-party/README.md
+      - FlClash: windows/flclash/README.md
+      - Clash Nyanpasu: windows/clash-nyanpasu/README.md
+      - HiddifyNext: windows/hiddifynext/README.md
+      - NekoRay: windows/nekoray/README.md
+      - Karing: windows/karing/README.md
+      - v2rayN: windows/v2rayn/README.md
+  - Android:
+      - v2rayNG: android/v2rayng/README.md
+      - Clash Meta for Android: android/clash-meta-for-android/README.md
+      - NekoBox for Android: android/nekobox-for-android/README.md
+      - HiddifyNext: android/hiddifynext/README.md
+      - Karing: android/karing/README.md
+      - Surfboard: android/surfboard/README.md
+  - macOS:
+      - Mihomo Party: macos/mihomo-party/README.md
+      - FlClash: macos/flclash/README.md
+      - Clash Nyanpasu: macos/clash-nyanpasu/README.md
+      - ClashX（已停更）: macos/clashx/README.md
+      - HiddifyNext: macos/hiddifynext/README.md
+      - NekoRay: macos/nekoray/README.md
+  - iOS:
+      - Shadowrocket（付费）: ios/shadowrocket/README.md
+      - Quantumult X（付费）: ios/quantumult-x/README.md
+      - Stash: ios/stash/README.md
+      - HiddifyNext（免费）: ios/hiddifynext/README.md
+      - sing-box（免费）: ios/sing-box/README.md
