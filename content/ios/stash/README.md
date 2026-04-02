@@ -2,8 +2,7 @@
 
 ### [zh-Hans]
 
-# Stash
-
+# Stash（付费）
 Stash 是 iOS/iPadOS 平台主流的 Clash 规则分流客户端之一。
 
 - Source: App Store (Official)
@@ -13,8 +12,7 @@ Stash 是 iOS/iPadOS 平台主流的 Clash 规则分流客户端之一。
 
 ### [zh-Hant-TW]
 
-# Stash
-
+# Stash（付費）
 Stash 是 iOS/iPadOS 平台主流的 Clash 規則分流客戶端之一。
 
 - Source: App Store (Official)
@@ -24,8 +22,7 @@ Stash 是 iOS/iPadOS 平台主流的 Clash 規則分流客戶端之一。
 
 ### [en]
 
-# Stash
-
+# Stash (Paid)
 
 Stash is one of the mainstream Clash rule-based clients on iOS/iPadOS.
 
