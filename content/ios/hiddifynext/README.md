@@ -10,7 +10,7 @@ HiddifyNext 在 iOS 上提供现代化界面与多协议支持，适合新手和
 
 <a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=Hiddify" target="_blank" rel="noopener">App Store</a>
 
-- iOS 端下载以 App Store 为准。
+- iOS 端以 App Store 为准。
 
 ### [zh-Hant-TW]
 
@@ -22,7 +22,7 @@ HiddifyNext 在 iOS 上提供現代化介面與多協議支援，適合新手與
 
 <a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=Hiddify" target="_blank" rel="noopener">App Store</a>
 
-- iOS 端下載以 App Store 為準。
+- iOS 端以 App Store 為準。
 
 ### [en]
 

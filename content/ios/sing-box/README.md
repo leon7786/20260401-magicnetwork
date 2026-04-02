@@ -10,7 +10,7 @@ sing-box 是新一代代理核心生态的重要组成，在 iOS 端有对应 Ap
 
 <a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=sing-box" target="_blank" rel="noopener">App Store</a>
 
-- iOS 端下载以 App Store 为准。
+- iOS 端以 App Store 为准。
 
 ### [zh-Hant-TW]
 
@@ -22,7 +22,7 @@ sing-box 是新一代代理核心生態的重要組成，在 iOS 端有對應 Ap
 
 <a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=sing-box" target="_blank" rel="noopener">App Store</a>
 
-- iOS 端下載以 App Store 為準。
+- iOS 端以 App Store 為準。
 
 ### [en]
 
