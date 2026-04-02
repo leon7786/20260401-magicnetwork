@@ -21,22 +21,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          node-version: 20
-          cache: npm
+          python-version: "3.x"
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install MkDocs
+        run: pip install mkdocs-material
 
       - name: Build site
-        run: npm run build
+        run: mkdocs build -f mkdocs.yml
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: ./site
 
   deploy:
     environment:
