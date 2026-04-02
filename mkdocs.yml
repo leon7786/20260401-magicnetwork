@@ -30,8 +30,6 @@ theme:
 
 nav:
   - Windows:
-      - Home: index.md
-      - Overview: windows/intro.md
       - Clash Verge: windows/clash-verge/README.md
       - Mihomo Party: windows/mihomo-party/README.md
       - FlClash: windows/flclash/README.md
@@ -40,12 +38,7 @@ nav:
       - NekoRay: windows/nekoray/README.md
       - Karing: windows/karing/README.md
       - v2rayN: windows/v2rayn/README.md
-      - Client index: reference/client-index.md
-      - Download policy: reference/download-policy.md
-      - FAQ: reference/faq.md
-      - Troubleshooting: reference/troubleshooting.md
   - Android:
-      - Overview: android/intro.md
       - v2rayNG: android/v2rayng/README.md
       - Clash Meta for Android: android/clash-meta-for-android/README.md
       - NekoBox for Android: android/nekobox-for-android/README.md
@@ -53,7 +46,6 @@ nav:
       - Karing: android/karing/README.md
       - Surfboard: android/surfboard/README.md
   - macOS:
-      - Overview: macos/intro.md
       - Mihomo Party: macos/mihomo-party/README.md
       - FlClash: macos/flclash/README.md
       - Clash Nyanpasu: macos/clash-nyanpasu/README.md
@@ -61,7 +53,6 @@ nav:
       - HiddifyNext: macos/hiddifynext/README.md
       - NekoRay: macos/nekoray/README.md
   - iOS:
-      - Overview: ios/intro.md
       - Shadowrocket（付费）: ios/shadowrocket/README.md
       - Quantumult X（付费）: ios/quantumult-x/README.md
       - Stash: ios/stash/README.md
