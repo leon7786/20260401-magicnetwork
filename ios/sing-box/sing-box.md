@@ -11,7 +11,7 @@ sing-box 是新一代代理核心生态的重要组成，在 iOS 端有对应 Ap
 - GitHub: https://github.com/SagerNet/sing-box
 
 ## 下载来源
-<a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=sing-box" target="_blank" rel="noopener">App Store 按钮（sing-box）</a>
+<a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=sing-box" target="_blank" rel="noopener">App Store</a>
 
 ## 说明
 - iOS 端下载以 App Store 为准。
@@ -27,7 +27,7 @@ sing-box 是新一代代理核心生態的重要組成，在 iOS 端有對應 Ap
 - GitHub: https://github.com/SagerNet/sing-box
 
 ## 下載來源
-<a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=sing-box" target="_blank" rel="noopener">App Store 按鈕（sing-box）</a>
+<a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=sing-box" target="_blank" rel="noopener">App Store</a>
 
 ## 說明
 - iOS 端下載以 App Store 為準。
@@ -44,7 +44,7 @@ sing-box is a key part of the new-generation proxy ecosystem and has an iOS app 
 - GitHub: https://github.com/SagerNet/sing-box
 
 ## Download Source
-<a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=sing-box" target="_blank" rel="noopener">App Store Button (sing-box)</a>
+<a class="md-button md-button--primary" href="https://apps.apple.com/us/search?term=sing-box" target="_blank" rel="noopener">App Store</a>
 
 ## Notes
 - On iOS, downloads should follow the App Store listing.
