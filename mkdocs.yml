@@ -34,17 +34,17 @@ nav:
       - Mihomo Party: windows/mihomo-party/README.md
       - HiddifyNext: windows/hiddifynext/README.md
       - NekoRay: windows/nekoray/README.md
-      - Karing: windows/karing/README.md
       - v2rayN: windows/v2rayn/README.md
       - FlClash: windows/flclash/README.md
       - Clash Nyanpasu（只支持 SS）: windows/clash-nyanpasu/README.md
+      - Karing（模拟客户端）: windows/karing/README.md
   - Android:
       - Clash Meta for Android: android/clash-meta-for-android/README.md
       - v2rayNG: android/v2rayng/README.md
       - NekoBox for Android: android/nekobox-for-android/README.md
       - HiddifyNext: android/hiddifynext/README.md
-      - Karing: android/karing/README.md
       - Surfboard: android/surfboard/README.md
+      - Karing（模拟客户端）: android/karing/README.md
   - macOS:
       - Mihomo Party: macos/mihomo-party/README.md
       - Clash Verge: macos/clash-verge/README.md
