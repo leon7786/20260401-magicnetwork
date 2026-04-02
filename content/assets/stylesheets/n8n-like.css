@@ -131,31 +131,41 @@
 }
 
 .md-typeset {
-  font-size: .94rem;
-  line-height: 1.66;
+  font-size: .96rem;
+  line-height: 1.72;
+}
+
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol {
+  margin: .78rem 0;
+}
+
+.md-typeset li {
+  margin: .22rem 0;
 }
 
 .md-typeset h1 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.25;
-  margin-bottom: .9rem;
+  margin: .2rem 0 1.05rem;
   border-bottom: 1px solid var(--gh-border);
-  padding-bottom: .55rem;
+  padding-bottom: .62rem;
 }
 
 .md-typeset h2 {
   font-size: 1.42rem;
-  font-weight: 600;
-  margin-top: 1.85rem;
-  margin-bottom: .65rem;
+  font-weight: 650;
+  margin-top: 2rem;
+  margin-bottom: .72rem;
 }
 
 .md-typeset h3 {
   font-size: 1.08rem;
-  font-weight: 600;
-  margin-top: 1.3rem;
-  margin-bottom: .45rem;
+  font-weight: 620;
+  margin-top: 1.45rem;
+  margin-bottom: .52rem;
 }
 
 .md-typeset a {
@@ -203,17 +213,20 @@
 .md-typeset .md-button {
   display: block;
   width: fit-content;
-  align-items: center;
-  justify-content: center;
   border: 1px solid #1f232826;
-  border-radius: var(--gh-radius);
+  border-radius: 8px;
   background: #f6f8fa;
   color: var(--gh-text);
   font-weight: 600;
   line-height: 1.2;
-  padding: .42rem .72rem;
-  margin: .9rem 0 .45rem;
+  font-size: .84rem;
+  padding: .48rem .8rem;
+  margin: 1rem 0 .56rem;
   box-shadow: 0 1px 0 rgba(31, 35, 40, .04);
+}
+
+.md-typeset .md-button + .md-button {
+  margin-top: .62rem;
 }
 
 .md-typeset .md-button--primary {
@@ -260,15 +273,15 @@
 .platform-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: .72rem;
-  margin: .75rem 0 .95rem;
+  gap: .9rem;
+  margin: .9rem 0 1.1rem;
 }
 
 .platform-card {
   display: block;
   border: 1px solid var(--gh-border);
-  border-radius: 8px;
-  padding: .78rem;
+  border-radius: 10px;
+  padding: .9rem .95rem;
   color: var(--gh-text) !important;
   text-decoration: none !important;
   background: #fff;
@@ -307,10 +320,23 @@
     max-width: 100%;
     padding: 1.18rem 1rem 1.6rem;
   }
+
+  .md-typeset .md-button {
+    margin: .82rem 0 .45rem;
+  }
 }
 
 @media (max-width: 59.9375em) {
   .platform-grid {
     grid-template-columns: 1fr;
+  }
+
+  .platform-card {
+    padding: .82rem .86rem;
+  }
+
+  .md-typeset {
+    font-size: .94rem;
+    line-height: 1.68;
   }
 }
