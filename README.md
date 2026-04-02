@@ -34,8 +34,8 @@
 
 ## 3. 技术栈
 
-- 文档框架：**MkDocs**
-- 主题：**Material for MkDocs**
+- 文档框架：**Docusaurus 3**
+- 主题：classic preset + 自定义样式
 - 部署：GitHub Pages + Actions
 - 前端增强：原生 JS（i18n 显示切换 + latest release 下载按钮解析）
 
@@ -47,13 +47,17 @@
 # 项目目录
 cd /root/20260401-magicnetwork
 
-# 若已有虚拟环境（推荐）
-.venv/bin/mkdocs build
-.venv/bin/mkdocs serve -a 0.0.0.0:8000
+# 安装依赖
+npm install
 
-# 无 venv 时
-mkdocs build
-mkdocs serve -a 0.0.0.0:8000
+# 本地开发（8000 端口）
+npm run start
+
+# 生产构建
+npm run build
+
+# 本地预览 build 产物
+npm run serve
 ```
 
 ---
@@ -62,30 +66,31 @@ mkdocs serve -a 0.0.0.0:8000
 
 ```text
 20260401-magicnetwork/
-├─ mkdocs.yml
+├─ docusaurus.config.ts
+├─ sidebars.ts
 ├─ docs/
-│  ├─ index.md
-│  ├─ windows/*/index.md
-│  ├─ android/*/index.md
-│  ├─ macos/*/index.md
-│  ├─ ios/*/index.md
-│  └─ assets/
-│     ├─ javascripts/
-│     │  ├─ i18n-render.js
-│     │  └─ download-latest.js
-│     └─ stylesheets/
-│        └─ n8n-like.css
-├─ overrides/
-│  └─ main.html
+│  ├─ intro.md
+│  ├─ windows/*/*.md
+│  ├─ android/*/*.md
+│  ├─ macos/*/*.md
+│  └─ ios/*/*.md
+├─ src/
+│  ├─ pages/index.tsx
+│  └─ css/custom.css
+├─ static/
+│  └─ js/
+│     ├─ i18n-render.js
+│     └─ download-latest.js
 ├─ .github/workflows/
 │  └─ deploy-pages.yml
-├─ windows/ android/ macos/ ios/   # 仓库可见的平台目录（历史镜像用途）
+├─ windows/ android/ macos/ ios/   # 历史目录（迁移后可按需清理）
 └─ README.md
 ```
 
 ### 注意
-- **真正用于站点渲染的是 `docs/**`**。
-- 根目录 `windows/android/macos/ios` 主要是满足“仓库 tree 可见每客户端文件夹”的展示诉求，不是主渲染源。
+- **真正用于站点渲染的是 `docs/**` + `sidebars.ts`**。
+- 左侧导航由 `sidebars.ts` 显式定义，避免“侧边栏空白”。
+- 右侧 TOC 已通过主题样式关闭。
 
 ---
 
@@ -97,7 +102,7 @@ mkdocs serve -a 0.0.0.0:8000
   - `### [zh-Hans]`
   - `### [zh-Hant-TW]`
   - `### [en]`
-- `docs/assets/javascripts/i18n-render.js` 负责：
+- `static/js/i18n-render.js` 负责：
   1. 依据浏览器语言映射 locale
      - `zh-Hans`：简体
      - `zh-Hant-TW`：繁体（台湾风格）
@@ -109,7 +114,7 @@ mkdocs serve -a 0.0.0.0:8000
 
 ### 6.2 下载按钮机制（GitHub latest release）
 
-文件：`docs/assets/javascripts/download-latest.js`
+文件：`static/js/download-latest.js`
 
 - 通过 `data-repo` + `data-match` 从 GitHub API 拉 `releases/latest` 资产。
 - 匹配成功：跳具体资产。
@@ -123,9 +128,9 @@ mkdocs serve -a 0.0.0.0:8000
 ## 7. 视觉主题状态（n8n 风格化）
 
 文件：
-- `mkdocs.yml`（已接入 `extra_css`、`custom_dir`）
-- `docs/assets/stylesheets/n8n-like.css`
-- `overrides/main.html`
+- `docusaurus.config.ts`
+- `src/css/custom.css`
+- `sidebars.ts`
 
 当前已完成：
 - header / tabs / sidebar / content container / button / code block / quote 的统一风格覆盖
@@ -152,7 +157,7 @@ mkdocs serve -a 0.0.0.0:8000
 
 ```bash
 # 1) 本地检查
-.venv/bin/mkdocs build
+npm run build
 
 # 2) 提交
 git status
@@ -187,18 +192,18 @@ GitHub Actions 文件：`.github/workflows/deploy-pages.yml`
 
 ## 11. 已知事项 / 常见疑问
 
-### Q1: `mkdocs build` 提示“部分页面不在 nav 中”
-这是当前配置行为（如 `docs/index.md` 和各平台 `intro.md`），不是构建失败。
+### Q1: `npm run build` 出现链接 warning 怎么办？
+优先检查 `sidebars.ts` 与文档路径是否一致；warning 不会阻塞 build，但建议尽快修正。
 
 ### Q2: 为什么既有 `docs/windows/...` 又有根目录 `windows/...`？
 - `docs/**`：站点渲染源
 - 根目录平台目录：仓库展示结构（历史要求）
 
 ### Q3: 新增客户端要改哪些地方？
-1. 新建 `docs/<platform>/<client>/index.md`（三语块）
-2. 在 `mkdocs.yml` 的 `nav` 加入口
+1. 新建 `docs/<platform>/<client>/<client>.md`（三语块）
+2. 在 `sidebars.ts` 加入口
 3. 如是 GitHub release 下载，使用 `download-latest` 按钮模式
-4. 本地跑 build + i18n/link 检查
+4. 本地跑 `npm run build` 检查
 
 ---
 
@@ -219,4 +224,4 @@ P2
 
 ## 13. 交接人给接手人的一句话
 
-先从 `mkdocs.yml`、`i18n-render.js`、`download-latest.js`、`n8n-like.css` 四个文件建立心智模型，再动页面内容；每次改动都先本地 `mkdocs build` 回归。
+先从 `docusaurus.config.ts`、`sidebars.ts`、`i18n-render.js`、`download-latest.js`、`custom.css` 五个文件建立心智模型，再动页面内容；每次改动都先本地 `npm run build` 回归。

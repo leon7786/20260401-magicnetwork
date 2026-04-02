@@ -1,0 +1,105 @@
+:root {
+  --ifm-color-primary: #4256f5;
+  --ifm-color-primary-dark: #3246da;
+  --ifm-background-color: #f4f7fc;
+  --ifm-font-size-base: 14px;
+  --ifm-line-height-base: 1.72;
+  --ifm-navbar-height: 3.2rem;
+  --ifm-card-border-radius: 12px;
+}
+
+html[data-theme='light'] body {
+  background:
+    radial-gradient(1200px 500px at 100% -30%, #e7ecff 0%, transparent 60%),
+    radial-gradient(1000px 420px at -10% -25%, #edf2ff 0%, transparent 55%),
+    #f4f7fc;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid #dbe3f1;
+  backdrop-filter: saturate(130%) blur(8px);
+}
+
+.theme-doc-sidebar-container {
+  border-right: 1px solid #dbe3f1;
+  background: #ffffff;
+}
+
+.menu__link {
+  border-radius: 8px;
+}
+
+.menu__link--active {
+  background: #eef1ff;
+  font-weight: 700;
+}
+
+.theme-doc-markdown {
+  background: linear-gradient(180deg, #ffffff 0%, #fcfdff 100%);
+  border: 1px solid #dbe3f1;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(35, 46, 84, 0.08);
+  padding: 2rem 2.35rem;
+}
+
+.theme-doc-toc-desktop,
+.table-of-contents,
+.col.col--3 {
+  display: none !important;
+}
+
+article {
+  max-width: 100% !important;
+}
+
+.landing-hero {
+  background: linear-gradient(130deg, #eff3ff 0%, #f9fbff 55%, #ffffff 100%);
+  border: 1px solid #dfe6f7;
+  border-radius: 14px;
+  padding: 1.1rem 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.landing-lead {
+  color: #5c6983;
+  margin-top: 0.3rem;
+}
+
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 0.8rem 0 1rem;
+}
+
+.platform-card {
+  display: block;
+  background: #fff;
+  border: 1px solid #dbe3f1;
+  border-radius: 12px;
+  padding: 0.85rem 0.95rem;
+  color: #1b2437 !important;
+  text-decoration: none !important;
+}
+
+.platform-card strong {
+  display: block;
+  color: #4256f5;
+  margin-bottom: 0.2rem;
+}
+
+.platform-card span {
+  color: #5c6983;
+  font-size: 0.85rem;
+}
+
+@media screen and (max-width: 996px) {
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-doc-markdown {
+    padding: 1.25rem 1.05rem;
+  }
+}
