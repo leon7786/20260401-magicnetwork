@@ -262,9 +262,17 @@
 }
 
 .md-search__form {
-  background: #eef1f4;
-  border: 1px solid #57606a66;
+  background: #2f3742;
+  border: 1px solid #4a5562;
   border-radius: var(--gh-radius);
+}
+
+.md-search__input {
+  color: #e6edf3;
+}
+
+.md-search__input::placeholder {
+  color: #b6c2cf;
 }
 
 .landing-hero {
