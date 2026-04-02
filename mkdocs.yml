@@ -3,7 +3,7 @@ site_url: https://leon7786.github.io/20260401-magicnetwork/
 repo_url: https://github.com/leon7786/20260401-magicnetwork
 repo_name: leon7786/20260401-magicnetwork
 
-docs_dir: content
+docs_dir: docs
 
 extra_css:
   - assets/stylesheets/n8n-like.css
@@ -24,6 +24,7 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
+    - toc.integrate
 
 nav:
   - Windows / Desktop:
