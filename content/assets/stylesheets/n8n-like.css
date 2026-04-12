@@ -1,17 +1,18 @@
 :root {
-  --gh-bg: #ffffff;
-  --gh-canvas-subtle: #f6f8fa;
-  --gh-border: #d0d7de;
-  --gh-border-muted: #d8dee4;
-  --gh-text: #1f2328;
-  --gh-muted: #57606a;
-  --gh-link: #0969da;
-  --gh-link-hover: #0550ae;
-  --gh-header: #24292f;
-  --gh-header-text: #f0f6fc;
-  --gh-accent-subtle: #ddf4ff;
-  --gh-success: #2da44e;
-  --gh-radius: 6px;
+  --gh-bg: #f7f9fc;
+  --gh-surface: #ffffff;
+  --gh-canvas-subtle: #f2f6fb;
+  --gh-border: #d9e1ea;
+  --gh-border-muted: #e5ebf2;
+  --gh-text: #1f2a37;
+  --gh-muted: #5b6b80;
+  --gh-link: #1d63d8;
+  --gh-link-hover: #1549aa;
+  --gh-header: #ffffff;
+  --gh-header-text: #1f2a37;
+  --gh-accent-subtle: #e8f0ff;
+  --gh-success: #1f6feb;
+  --gh-radius: 8px;
 
   --md-default-bg-color: var(--gh-bg);
   --md-default-fg-color: var(--gh-text);
@@ -22,7 +23,8 @@
   height: 3rem;
   background: var(--gh-header);
   color: var(--gh-header-text);
-  border-bottom: 1px solid #3d444d;
+  border-bottom: 1px solid var(--gh-border);
+  box-shadow: 0 1px 0 rgba(31, 42, 55, .04);
 }
 
 .md-header__inner {
@@ -38,28 +40,31 @@
 
 .md-header__title {
   font-size: .88rem;
-  font-weight: 600;
+  font-weight: 650;
 }
 
 .md-tabs {
-  background: var(--gh-header);
-  border-bottom: 1px solid #3d444d;
+  background: #f3f7fd;
+  border-bottom: 1px solid var(--gh-border-muted);
 }
 
 .md-tabs__list {
-  gap: .1rem;
+  gap: .16rem;
 }
 
 .md-tabs__link {
-  color: #c9d1d9;
+  color: #42506a;
   font-weight: 600;
-  font-size: .77rem;
+  font-size: .78rem;
   opacity: 1;
+  border-radius: 999px;
+  padding: .32rem .68rem;
 }
 
 .md-tabs__link--active,
 .md-tabs__link:hover {
-  color: #fff;
+  color: #173d8a;
+  background: #e7effd;
 }
 
 .md-main {
@@ -79,11 +84,12 @@
 }
 
 .md-sidebar--primary .md-sidebar__scrollwrap {
-  background: var(--gh-canvas-subtle);
-  border-right: 1px solid var(--gh-border);
+  background: var(--gh-surface);
+  border-right: 1px solid var(--gh-border-muted);
 }
 
 .md-sidebar--secondary .md-sidebar__scrollwrap {
+  background: transparent;
   border-left: 1px solid var(--gh-border-muted);
 }
 
@@ -109,30 +115,30 @@
 
 .md-nav__link {
   border-radius: var(--gh-radius);
-  margin: .06rem .45rem;
-  padding: .28rem .52rem;
-  font-size: .82rem;
+  margin: .08rem .5rem;
+  padding: .34rem .58rem;
+  font-size: .83rem;
 }
 
 .md-nav__link:hover {
-  background: #ebf2ff;
+  background: #edf3ff;
 }
 
 .md-nav__link--active {
   background: var(--gh-accent-subtle);
-  color: #0550ae;
-  font-weight: 600;
+  color: #1a4fb3;
+  font-weight: 650;
 }
 
 .md-content__inner {
-  max-width: 1120px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 1.6rem 1.6rem 2.2rem;
+  padding: 1.8rem 1.85rem 2.4rem;
 }
 
 .md-typeset {
-  font-size: .96rem;
-  line-height: 1.72;
+  font-size: .97rem;
+  line-height: 1.74;
 }
 
 .md-typeset p,
@@ -158,9 +164,9 @@
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.25;
-  margin: .2rem 0 1.05rem;
-  border-bottom: 1px solid var(--gh-border);
-  padding-bottom: .62rem;
+  margin: .2rem 0 1.12rem;
+  border-bottom: 1px solid var(--gh-border-muted);
+  padding-bottom: .68rem;
 }
 
 .md-typeset h2 {
@@ -219,67 +225,74 @@
   border-color: var(--gh-border);
 }
 
+.md-typeset .download-label {
+  margin: 1.18rem 0 .5rem;
+  font-size: .86rem;
+  font-weight: 650;
+  color: #274062;
+}
+
 .md-typeset .md-button {
   display: block;
   width: fit-content;
-  border: 1px solid #1f232826;
-  border-radius: 8px;
-  background: #f6f8fa;
+  border: 1px solid #c8d7ea;
+  border-radius: 10px;
+  background: #ffffff;
   color: var(--gh-text);
-  font-weight: 600;
-  line-height: 1.2;
-  font-size: .84rem;
-  padding: .48rem .8rem;
-  margin: 1.35rem 0 .62rem;
-  box-shadow: 0 1px 0 rgba(31, 35, 40, .04);
+  font-weight: 620;
+  line-height: 1.25;
+  font-size: .85rem;
+  padding: .5rem .88rem;
+  margin: .52rem 0 .62rem;
+  box-shadow: 0 1px 0 rgba(29, 99, 216, .06);
 }
 
 .md-typeset .md-button + .md-button {
-  margin-top: .62rem;
+  margin-top: .48rem;
 }
 
 .md-typeset .md-button--primary {
-  border-color: #1f883d;
+  border-color: #1d63d8;
   background: var(--gh-success);
   color: #fff;
 }
 
 .md-typeset .md-button:hover {
-  filter: brightness(.985);
+  filter: brightness(.99);
 }
 
 .md-typeset a[href^="https://"]:not(.md-button) {
-  color: #000;
+  color: #2a3b52;
   text-decoration: underline;
-  text-decoration-color: #000;
+  text-decoration-color: #8395ad;
   text-underline-offset: 2px;
-  font-weight: 400;
+  font-weight: 450;
 }
 
 .md-typeset a[href^="https://"]:not(.md-button):hover {
-  color: #000;
-  text-decoration-color: #000;
+  color: #183255;
+  text-decoration-color: #3f5f8f;
 }
 
 .md-search__form {
-  background: #2f3742;
-  border: 1px solid #4a5562;
+  background: #eef3fb;
+  border: 1px solid #d4deeb;
   border-radius: var(--gh-radius);
 }
 
 .md-search__input {
-  color: #e6edf3;
+  color: #21324a;
 }
 
 .md-search__input::placeholder {
-  color: #b6c2cf;
+  color: #75859a;
 }
 
 .landing-hero {
-  border: 1px solid var(--gh-border);
-  border-radius: 10px;
-  background: linear-gradient(180deg, #f6f8fa 0%, #fff 100%);
-  padding: .98rem 1.08rem;
+  border: 1px solid #dbe5f2;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f4f8ff 0%, #ffffff 100%);
+  padding: 1.05rem 1.16rem;
 }
 
 .landing-lead {
@@ -290,23 +303,24 @@
 .platform-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: .9rem;
-  margin: .9rem 0 1.1rem;
+  gap: .98rem;
+  margin: .95rem 0 1.18rem;
 }
 
 .platform-card {
   display: block;
-  border: 1px solid var(--gh-border);
-  border-radius: 10px;
-  padding: .9rem .95rem;
+  border: 1px solid #d5e0ef;
+  border-radius: 12px;
+  padding: .96rem 1rem;
   color: var(--gh-text) !important;
   text-decoration: none !important;
-  background: #fff;
+  background: #ffffff;
+  box-shadow: 0 1px 0 rgba(29, 99, 216, .05);
 }
 
 .platform-card:hover {
-  border-color: #afb8c1;
-  background: #f6f8fa;
+  border-color: #b5c7df;
+  background: #f6f9ff;
 }
 
 .platform-card strong {
@@ -338,9 +352,6 @@
     padding: 1.18rem 1rem 1.6rem;
   }
 
-  .md-typeset .md-button {
-    margin: 1.08rem 0 .5rem;
-  }
 }
 
 @media (max-width: 59.9375em) {

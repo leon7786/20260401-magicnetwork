@@ -1,7 +1,20 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const buttons = document.querySelectorAll('a.download-latest[data-repo]');
+  const allButtons = document.querySelectorAll('.md-typeset a.md-button');
   const cache = new Map();
   const proxyPrefix = 'https://github.xloard.com/';
+
+  allButtons.forEach((btn) => {
+    const prev = btn.previousElementSibling;
+    if (prev && (prev.matches('a.md-button') || prev.classList.contains('download-label'))) {
+      return;
+    }
+
+    const label = document.createElement('p');
+    label.className = 'download-label';
+    label.textContent = '下载地址：';
+    btn.parentNode.insertBefore(label, btn);
+  });
 
   const proxify = (url) => {
     if (!url) return url;
