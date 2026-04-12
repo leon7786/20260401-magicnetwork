@@ -61,9 +61,10 @@
   padding: .32rem .68rem;
 }
 
-.md-tabs__link--active,
-.md-tabs__link:hover {
-  color: #173d8a;
+.md-tabs .md-tabs__link:hover,
+.md-tabs .md-tabs__link--active,
+.md-tabs .md-tabs__item--active .md-tabs__link {
+  color: #173d8a !important;
   background: #e7effd;
 }
 
