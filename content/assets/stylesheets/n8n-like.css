@@ -43,7 +43,7 @@
 }
 
 .md-header__title {
-  font-size: .9rem;
+  font-size: .78rem;
   font-weight: 650;
 }
 
@@ -60,7 +60,7 @@
 .md-tabs__link {
   color: var(--gh-muted);
   font-weight: 600;
-  font-size: .78rem;
+  font-size: .7rem;
   line-height: 1.7;
   opacity: 1;
   border-radius: 999px;
@@ -93,6 +93,7 @@
 .md-sidebar--primary .md-sidebar__scrollwrap {
   background: var(--gh-surface);
   border-right: 1px solid var(--gh-border-muted);
+  padding-left: .55rem;
 }
 
 .md-sidebar--secondary .md-sidebar__scrollwrap {
@@ -103,7 +104,7 @@
 .md-nav__title {
   color: var(--gh-muted);
   font-weight: 600;
-  font-size: .78rem;
+  font-size: .68rem;
   letter-spacing: .03em;
   text-transform: uppercase;
   font-family: var(--gh-font-sans);
@@ -123,9 +124,9 @@
 
 .md-nav__link {
   border-radius: var(--gh-radius);
-  margin: .08rem .5rem;
-  padding: .28rem .52rem;
-  font-size: .8rem;
+  margin: .08rem .6rem;
+  padding: .24rem .5rem;
+  font-size: .7rem;
   line-height: 1.7;
   font-family: var(--gh-font-sans);
 }
@@ -147,7 +148,7 @@
 }
 
 .md-typeset {
-  font-size: .875rem;
+  font-size: .75rem;
   line-height: 1.6;
   font-family: var(--gh-font-sans);
   color: var(--gh-text);
@@ -177,18 +178,18 @@
 }
 
 .md-typeset li:has(> a[href^="https://"]) {
-  font-size: .8125rem;
+  font-size: .7rem;
   color: var(--gh-muted);
 }
 
 .md-typeset li:has(> a[href^="https://"]) > a[href^="https://"] {
-  font-size: .8125rem;
+  font-size: .7rem;
   font-weight: 600;
 }
 
 .md-typeset .source-label {
   margin: .82rem 0 .44rem;
-  font-size: .78rem;
+  font-size: .68rem;
   line-height: 1.7;
   font-weight: 600;
   color: var(--gh-muted);
@@ -209,7 +210,7 @@
 }
 
 .md-typeset h1 {
-  font-size: 1.75rem;
+  font-size: 1.45rem;
   font-weight: 600;
   line-height: 1.25;
   margin: .2rem 0 1rem;
@@ -219,7 +220,7 @@
 }
 
 .md-typeset h2 {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 600;
   line-height: 1.25;
   margin-top: 2rem;
@@ -228,7 +229,7 @@
 }
 
 .md-typeset h3 {
-  font-size: 1rem;
+  font-size: .875rem;
   font-weight: 600;
   line-height: 1.25;
   margin-top: 1.5rem;
@@ -274,7 +275,7 @@
   border: 1px solid var(--gh-border);
   border-radius: 6px;
   overflow: hidden;
-  font-size: .875rem;
+  font-size: .75rem;
 }
 
 .md-typeset table:not([class]) th,
@@ -296,7 +297,7 @@
 
 .md-typeset .download-label {
   margin: 1.15rem 0 .52rem;
-  font-size: .78rem;
+  font-size: .68rem;
   line-height: 1.7;
   font-weight: 600;
   color: var(--gh-muted);
@@ -311,8 +312,8 @@
   color: var(--gh-text);
   font-weight: 600;
   line-height: 1.7;
-  font-size: .8125rem;
-  padding: .4rem .75rem;
+  font-size: .7rem;
+  padding: .35rem .65rem;
   margin: .5rem 0 .46rem;
   box-shadow: none;
 }
@@ -397,7 +398,7 @@
   color: var(--gh-link);
   display: block;
   margin-bottom: .18rem;
-  font-size: .875rem;
+  font-size: .75rem;
   font-weight: 600;
   line-height: 1.7;
   font-family: var(--gh-font-sans);
@@ -405,7 +406,7 @@
 
 .platform-card span {
   color: var(--gh-muted);
-  font-size: .78rem;
+  font-size: .68rem;
   line-height: 1.7;
   font-family: var(--gh-font-sans);
 }
@@ -445,15 +446,15 @@
   }
 
   .md-typeset {
-    font-size: .92rem;
-    line-height: 1.68;
+    font-size: .78rem;
+    line-height: 1.66;
   }
 
   .md-typeset h1 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .md-typeset h2 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
