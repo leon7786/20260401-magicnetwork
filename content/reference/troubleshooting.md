@@ -4,6 +4,8 @@
 
 # 故障排查 / Troubleshooting
 
+按“下载异常 → 架构异常 → 语言异常”的顺序排查，通常能快速定位问题。
+
 ## 下载按钮打不开
 1. 先检查网络与代理配置。
 2. 尝试直接访问按钮链接的 GitHub release 页面。
@@ -21,6 +23,8 @@
 
 # 故障排查 / Troubleshooting
 
+建議依序排查「下載異常 → 架構異常 → 語言異常」，通常可快速定位問題。
+
 ## 下載按鈕無法打開
 1. 先檢查網路與代理設定。
 2. 嘗試直接訪問按鈕對應的 GitHub release 頁面。
@@ -37,6 +41,8 @@
 ### [en]
 
 # Troubleshooting
+
+Check issues in this order: download failure → architecture mismatch → language mismatch.
 
 ## Download button does not open
 1. Check network and proxy availability.

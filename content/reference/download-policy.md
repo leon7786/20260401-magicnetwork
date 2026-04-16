@@ -4,6 +4,8 @@
 
 # 下载策略 / Download policy
 
+本页说明站点下载链接的统一规则，帮助你快速判断“应该点哪个入口”。
+
 ## 目标
 统一下载来源，减少假链接与版本混乱。
 
@@ -23,6 +25,8 @@
 
 # 下載策略 / Download policy
 
+本頁說明站點下載連結的統一規則，協助你快速判斷應使用的入口。
+
 ## 目標
 統一下載來源，降低假連結與版本混亂。
 
@@ -41,6 +45,8 @@
 ### [en]
 
 # Download policy
+
+This page explains the site-wide download rules so you can quickly choose the right entry.
 
 ## Goal
 Use consistent official sources and reduce broken or misleading download routes.

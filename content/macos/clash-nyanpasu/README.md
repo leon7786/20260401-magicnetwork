@@ -26,7 +26,6 @@ Clash Nyanpasu 在 macOS 提供活躍維護的 Clash GUI 使用體驗。
 
 # Clash Nyanpasu
 
-
 Clash Nyanpasu offers an actively maintained Clash GUI experience on macOS.
 
 - GitHub: <a href="https://github.com/libnyanpasu/clash-nyanpasu" target="_blank" rel="noopener">https://github.com/libnyanpasu/clash-nyanpasu</a>

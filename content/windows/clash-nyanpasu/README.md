@@ -26,7 +26,6 @@ Clash Nyanpasu 是社群活躍的 Clash GUI 客戶端，支援規則分流與多
 
 # Clash Nyanpasu
 
-
 Clash Nyanpasu is an actively maintained Clash GUI client with rule routing and multi-core management.
 
 - GitHub: <a href="https://github.com/libnyanpasu/clash-nyanpasu" target="_blank" rel="noopener">https://github.com/libnyanpasu/clash-nyanpasu</a>

@@ -4,6 +4,24 @@ document.addEventListener('DOMContentLoaded', async () => {
   const cache = new Map();
   const proxyPrefix = 'https://github.xloard.com/';
 
+  const detectLocale = () => {
+    const lang = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+    const l = lang.toLowerCase();
+    if (!l.startsWith('zh')) return 'en';
+    if (l.includes('tw') || l.includes('hk') || l.includes('mo') || l.includes('hant')) return 'zh-Hant-TW';
+    return 'zh-Hans';
+  };
+
+  const locale = detectLocale();
+  const labels = {
+    'zh-Hans': { download: '下载地址：', source: '来源信息：' },
+    'zh-Hant-TW': { download: '下載地址：', source: '來源資訊：' },
+    en: { download: 'Download:', source: 'Sources:' }
+  };
+  const labelSet = labels[locale] || labels.en;
+
+  const firstButtons = [];
+
   allButtons.forEach((btn) => {
     const prev = btn.previousElementSibling;
     if (prev && (prev.matches('a.md-button') || prev.classList.contains('download-label'))) {
@@ -12,8 +30,30 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const label = document.createElement('p');
     label.className = 'download-label';
-    label.textContent = '下载地址：';
+    label.textContent = labelSet.download;
     btn.parentNode.insertBefore(label, btn);
+    firstButtons.push(btn);
+  });
+
+  firstButtons.forEach((btn) => {
+    let infoList = btn.previousElementSibling;
+    if (infoList && infoList.classList.contains('download-label')) {
+      infoList = infoList.previousElementSibling;
+    }
+
+    if (!infoList || infoList.tagName !== 'UL') return;
+
+    const hasSourceLinks = Boolean(infoList.querySelector('a[href^="http"]'));
+    if (!hasSourceLinks) return;
+
+    const prev = infoList.previousElementSibling;
+    const hasSectionTitle = prev && (prev.classList.contains('source-label') || prev.tagName === 'H2' || prev.tagName === 'H3');
+    if (hasSectionTitle) return;
+
+    const sourceLabel = document.createElement('p');
+    sourceLabel.className = 'source-label';
+    sourceLabel.textContent = labelSet.source;
+    infoList.parentNode.insertBefore(sourceLabel, infoList);
   });
 
   const proxify = (url) => {

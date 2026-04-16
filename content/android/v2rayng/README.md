@@ -24,7 +24,6 @@ v2rayNG 是 Android 上經典的 V2Ray/Xray 客戶端，設定方式成熟。
 
 # v2rayNG
 
-
 v2rayNG is a classic Android client for V2Ray/Xray with a mature configuration workflow.
 
 - GitHub: <a href="https://github.com/2dust/v2rayNG" target="_blank" rel="noopener">https://github.com/2dust/v2rayNG</a>

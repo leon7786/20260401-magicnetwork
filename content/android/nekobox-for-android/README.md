@@ -24,7 +24,6 @@ NekoBox for Android 是面向 Android 的全能代理客戶端，常用於 sing-
 
 # NekoBox for Android
 
-
 NekoBox for Android is an all-in-one Android client commonly used in the sing-box ecosystem.
 
 - GitHub: <a href="https://github.com/MatsuriDayo/NekoBoxForAndroid" target="_blank" rel="noopener">https://github.com/MatsuriDayo/NekoBoxForAndroid</a>

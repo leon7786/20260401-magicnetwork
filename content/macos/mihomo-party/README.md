@@ -26,7 +26,6 @@ Mihomo Party 在 macOS 上提供 Clash/Mihomo 規則分流和視覺化管理。
 
 # Mihomo Party
 
-
 Mihomo Party on macOS provides Clash/Mihomo rule routing with GUI management.
 
 - GitHub: <a href="https://github.com/mihomo-party-org/clash-party" target="_blank" rel="noopener">https://github.com/mihomo-party-org/clash-party</a>
