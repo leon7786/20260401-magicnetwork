@@ -168,12 +168,16 @@ html {
   line-height: 1.5;
   font-family: var(--gh-font-sans);
   border: 1px solid transparent;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  background-image: none !important;
   transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
 
 .md-nav__link:hover {
   background: #eef6ff;
   border-color: #d8e7ff;
+  box-shadow: none !important;
 }
 
 .md-nav__link--active {
@@ -181,6 +185,7 @@ html {
   color: var(--gh-link);
   border-color: #c6dcff;
   font-weight: 600;
+  box-shadow: none !important;
 }
 
 .md-content__inner {
