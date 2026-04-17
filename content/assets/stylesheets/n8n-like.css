@@ -109,11 +109,11 @@ html {
   background: var(--gh-surface) !important;
   box-shadow: none !important;
   text-shadow: none !important;
+  border-bottom: 1px solid var(--gh-border-muted);
   position: sticky;
   top: 0;
   z-index: 1;
 }
-
 .md-nav--primary .md-nav__title::before,
 .md-nav--primary .md-nav__title::after,
 .md-sidebar--primary .md-nav__title::before,
@@ -126,8 +126,18 @@ html {
 .md-nav--primary .md-nav__title ~ .md-nav__list {
   background: var(--gh-surface);
   box-shadow: none;
+  border-top: 0;
 }
 
+.md-nav--primary .md-nav__title ~ .md-nav__list > .md-nav__item:first-child {
+  border-top: 0 !important;
+}
+
+.md-nav--primary .md-nav__title ~ .md-nav__list > .md-nav__item:first-child > .md-nav__link {
+  margin-top: .2rem;
+  border-top: 1px solid var(--gh-border-muted);
+  border-radius: 6px 6px 8px 8px;
+}
 .md-nav--primary,
 .md-nav--primary .md-nav {
   background: var(--gh-surface);
