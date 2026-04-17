@@ -104,6 +104,35 @@ html {
   padding-left: .9rem;
 }
 
+.md-nav--primary .md-nav__title,
+.md-nav--primary .md-nav__title[for="__drawer"] {
+  background: var(--gh-surface) !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.md-nav--primary .md-nav__title::before,
+.md-nav--primary .md-nav__title::after,
+.md-sidebar--primary .md-nav__title::before,
+.md-sidebar--primary .md-nav__title::after {
+  box-shadow: none !important;
+  background: transparent !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+.md-nav--primary .md-nav__title ~ .md-nav__list {
+  background: var(--gh-surface);
+  box-shadow: none;
+}
+
+.md-nav--primary,
+.md-nav--primary .md-nav {
+  background: var(--gh-surface);
+}
+
 .md-sidebar--secondary .md-sidebar__scrollwrap {
   background: var(--gh-bg);
   border-left: 1px solid var(--gh-border-muted);
