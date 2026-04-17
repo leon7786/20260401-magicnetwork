@@ -58,7 +58,8 @@ html {
 }
 
 .md-tabs__list {
-  gap: .16rem;
+  gap: .24rem;
+  padding: .2rem .35rem;
 }
 
 .md-tabs__link {
@@ -68,7 +69,9 @@ html {
   line-height: 1.5;
   opacity: 1;
   border-radius: 999px;
-  padding: .24rem .6rem;
+  padding: .3rem .74rem;
+  border: 1px solid transparent;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
 
 .md-tabs .md-tabs__link:hover,
@@ -76,6 +79,7 @@ html {
 .md-tabs .md-tabs__item--active .md-tabs__link {
   color: var(--gh-link) !important;
   background: #eef6ff;
+  border-color: #c6dcff;
 }
 
 .md-main {
@@ -112,10 +116,11 @@ html {
   letter-spacing: .03em;
   text-transform: uppercase;
   font-family: var(--gh-font-sans);
+  margin: .25rem .85rem .4rem;
 }
 
 .md-nav__item {
-  margin: .02rem 0;
+  margin: .06rem 0;
 }
 
 .md-nav__toggle {
@@ -127,21 +132,25 @@ html {
 }
 
 .md-nav__link {
-  border-radius: var(--gh-radius);
-  margin: .08rem .6rem;
-  padding: .24rem .5rem;
+  border-radius: 8px;
+  margin: .08rem .8rem;
+  padding: .28rem .6rem;
   font-size: .875rem;
   line-height: 1.5;
   font-family: var(--gh-font-sans);
+  border: 1px solid transparent;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
 }
 
 .md-nav__link:hover {
   background: #eef6ff;
+  border-color: #d8e7ff;
 }
 
 .md-nav__link--active {
   background: var(--gh-accent-subtle);
   color: var(--gh-link);
+  border-color: #c6dcff;
   font-weight: 600;
 }
 
@@ -322,7 +331,7 @@ html {
   box-shadow: none;
 }
 
-.md-typeset .md-button + .md-button {
+.download-group .md-button + .md-button {
   margin-top: .44rem;
 }
 

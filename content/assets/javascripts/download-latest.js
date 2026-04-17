@@ -35,25 +35,80 @@ document.addEventListener('DOMContentLoaded', async () => {
     firstButtons.push(btn);
   });
 
+  const processedInfoLists = new Set();
+
   firstButtons.forEach((btn) => {
-    let infoList = btn.previousElementSibling;
-    if (infoList && infoList.classList.contains('download-label')) {
-      infoList = infoList.previousElementSibling;
+    const listContainer = btn.closest('ul');
+    const buttonBlock = btn.closest('p') || btn.parentElement;
+
+    let infoList = null;
+    if (listContainer && listContainer.querySelector('a.md-button')) {
+      infoList = listContainer;
+    } else if (buttonBlock) {
+      infoList = buttonBlock.previousElementSibling;
+      if (infoList && infoList.classList.contains('source-label')) {
+        infoList = infoList.previousElementSibling;
+      }
     }
 
-    if (!infoList || infoList.tagName !== 'UL') return;
+    if (!infoList || infoList.tagName !== 'UL' || processedInfoLists.has(infoList)) return;
+    processedInfoLists.add(infoList);
 
-    const hasSourceLinks = Boolean(infoList.querySelector('a[href^="http"]'));
-    if (!hasSourceLinks) return;
+    const hasSourceContent = Boolean(infoList.textContent && infoList.textContent.trim());
+    if (!hasSourceContent) return;
+
+    const sourceItems = [];
+    infoList.querySelectorAll(':scope > li').forEach((item) => {
+      const clone = item.cloneNode(true);
+      clone.querySelectorAll('.download-label, a.md-button').forEach((node) => node.remove());
+      if ((clone.textContent || '').trim()) {
+        sourceItems.push(clone);
+      }
+    });
+
+    if (!sourceItems.length) return;
+
+    const buttonNodes = Array.from(infoList.querySelectorAll('a.md-button'));
+    if (!buttonNodes.length && buttonBlock) {
+      buttonNodes.push(...Array.from(buttonBlock.querySelectorAll('a.md-button')));
+    }
+
+    if (!buttonNodes.length) return;
+
+    let downloadLabel = buttonNodes[0].previousElementSibling;
+    if (!downloadLabel || !downloadLabel.classList.contains('download-label')) {
+      downloadLabel = document.createElement('p');
+      downloadLabel.className = 'download-label';
+      downloadLabel.textContent = labelSet.download;
+    }
+
+    const downloadGroup = document.createElement('div');
+    downloadGroup.className = 'download-group';
+    downloadGroup.appendChild(downloadLabel);
+    buttonNodes.forEach((node) => downloadGroup.appendChild(node));
+
+    const sourceList = document.createElement('ul');
+    sourceItems.forEach((item) => sourceList.appendChild(item));
 
     const prev = infoList.previousElementSibling;
     const hasSectionTitle = prev && (prev.classList.contains('source-label') || prev.tagName === 'H2' || prev.tagName === 'H3');
-    if (hasSectionTitle) return;
 
-    const sourceLabel = document.createElement('p');
-    sourceLabel.className = 'source-label';
-    sourceLabel.textContent = labelSet.source;
-    infoList.parentNode.insertBefore(sourceLabel, infoList);
+    let sourceLabel = prev && prev.classList.contains('source-label') ? prev : null;
+    if (!sourceLabel && !hasSectionTitle) {
+      sourceLabel = document.createElement('p');
+      sourceLabel.className = 'source-label';
+      sourceLabel.textContent = labelSet.source;
+    }
+
+    infoList.insertAdjacentElement('beforebegin', downloadGroup);
+    if (sourceLabel) {
+      downloadGroup.insertAdjacentElement('afterend', sourceLabel);
+      sourceLabel.insertAdjacentElement('afterend', sourceList);
+    } else {
+      downloadGroup.insertAdjacentElement('afterend', sourceList);
+    }
+
+    infoList.remove();
   });
 
   const proxify = (url) => {
