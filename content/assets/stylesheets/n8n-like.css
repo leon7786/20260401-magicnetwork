@@ -143,7 +143,7 @@ body {
 .md-main { background: transparent; }
 
 /* ── Sidebar ── */
-.md-sidebar--primary { width: 18rem; }
+.md-sidebar--primary { width: 20rem; }
 .md-sidebar--secondary { width: 14rem; }
 
 .md-sidebar--primary .md-sidebar__scrollwrap {
@@ -152,7 +152,9 @@ body {
   border-radius: var(--pad-radius);
   margin-top: 4px;
   padding-left: 0;
+  padding-right: 0;
   box-shadow: var(--pad-shadow-soft);
+  scrollbar-width: thin;
 }
 
 .md-nav--primary .md-nav__title,
@@ -186,6 +188,9 @@ body {
 }
 .md-nav--primary, .md-nav--primary .md-nav { background: var(--pad-panel); }
 
+/* ── Reduce nested indent ── */
+.md-nav--primary .md-nav .md-nav { padding-left: .5rem; }
+
 .md-sidebar--secondary .md-sidebar__scrollwrap {
   background: transparent;
   border: none;
@@ -206,9 +211,9 @@ body {
 
 .md-nav__link {
   border-radius: var(--pad-radius-sm);
-  margin: .06rem .6rem;
-  padding: .3rem .65rem;
-  font-size: .9rem;
+  margin: .06rem .65rem;
+  padding: .3rem .6rem;
+  font-size: .92rem;
   line-height: 1.5;
   border: 1px solid transparent;
   box-shadow: none !important;
@@ -217,6 +222,9 @@ body {
   transition: background-color .15s, border-color .15s, color .15s;
   color: var(--pad-text);
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .md-nav__link:hover {
   background: var(--pad-accent-soft);
