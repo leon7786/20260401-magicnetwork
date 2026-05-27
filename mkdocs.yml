@@ -19,14 +19,25 @@ theme:
   font: false
   palette:
     - scheme: default
-      primary: blue
-      accent: blue
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 暗色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 亮色模式
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
+    - navigation.top
     - search.suggest
     - search.highlight
+    - content.code.copy
 
 nav:
   - Windows:
