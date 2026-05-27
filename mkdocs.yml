@@ -16,10 +16,11 @@ theme:
   name: material
   custom_dir: content/overrides
   language: zh
+  font: false
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: blue
+      accent: blue
   features:
     - navigation.tabs
     - navigation.sections
