@@ -203,13 +203,22 @@ body {
   box-shadow: var(--pad-shadow-soft);
 }
 .md-sidebar--secondary .md-nav__title {
-  background: linear-gradient(180deg, var(--pad-header-from), var(--pad-header-to));
-  color: var(--pad-header-text);
+  background: var(--pad-bg-soft);
+  color: var(--pad-muted);
+  border-bottom: 1px solid var(--pad-line);
   border-radius: var(--pad-radius-sm) var(--pad-radius-sm) 0 0;
   padding: .5rem .65rem;
   margin: 0;
   font-size: .75rem;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+}
+.md-sidebar--secondary .md-nav__title::before {
+  content: '▾';
+  font-size: .6rem;
+  color: var(--pad-muted);
 }
 
 .md-nav__title {
