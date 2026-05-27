@@ -41,8 +41,8 @@ theme:
 
 nav:
   - Windows:
-      - Clash Verge: windows/clash-verge/README.md
       - Mihomo Party: windows/mihomo-party/README.md
+      - Clash Verge: windows/clash-verge/README.md
       - HiddifyNext: windows/hiddifynext/README.md
       - NekoRay: windows/nekoray/README.md
       - v2rayN: windows/v2rayn/README.md
