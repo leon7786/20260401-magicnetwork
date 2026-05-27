@@ -44,6 +44,12 @@
 }
 
 /* ── Dark mode button overrides ── */
+[data-md-color-scheme="slate"] .md-header {
+  background: rgba(15,23,42,.85) !important;
+  border-bottom-color: #1e293b;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3), 0 1px 0 rgba(255,255,255,.04) inset;
+}
+
 [data-md-color-scheme="slate"] .md-tabs__link {
   background: linear-gradient(180deg, #334155, #1e293b);
   border-color: #475569;
@@ -133,21 +139,23 @@ body {
 }
 
 /* ═══════════════════════════════════════════
-   HEADER — clean sticky top bar
+   HEADER — glass-morphism sticky top bar
    ═══════════════════════════════════════════ */
 .md-header {
-  height: 3.2rem;
-  background: var(--bg-elevated) !important;
+  height: 3.5rem;
+  background: rgba(255,255,255,.82) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   color: var(--text) !important;
   border-bottom: 1px solid var(--border);
-  box-shadow: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,.04), 0 1px 0 rgba(255,255,255,.6) inset;
   position: sticky;
   top: 0;
   z-index: 4;
 }
 
 .md-header__inner {
-  min-height: 3.2rem;
+  min-height: 3.5rem;
   height: 100%;
   padding: 0 1.5rem;
   max-width: 1400px !important;
@@ -164,9 +172,9 @@ body {
 }
 
 .md-header__topic {
-  font-size: .875rem;
-  font-weight: 600;
-  letter-spacing: -.01em;
+  font-size: .9rem;
+  font-weight: 650;
+  letter-spacing: -.02em;
 }
 
 .md-header__source {
@@ -177,18 +185,20 @@ body {
 .md-search__form {
   background: var(--bg-surface);
   border: 1px solid var(--border);
-  border-radius: 999px;
-  height: 2rem;
-  transition: border-color .15s, box-shadow .15s;
+  border-radius: 8px;
+  height: 2.2rem;
+  transition: all .2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,.03);
 }
 
 .md-search__form:hover {
   border-color: var(--border-hover);
+  box-shadow: 0 1px 3px rgba(0,0,0,.06);
 }
 
 .md-search__form:focus-within {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-soft);
+  box-shadow: 0 0 0 3px rgba(37,99,235,.1);
 }
 
 .md-search__input {
@@ -229,13 +239,13 @@ body {
 }
 
 /* ═══════════════════════════════════════════
-   TABS — clean pill navigation
+   TABS — refined navigation strip
    ═══════════════════════════════════════════ */
 .md-tabs {
-  background: var(--bg) !important;
+  background: linear-gradient(180deg, var(--bg-elevated), var(--bg)) !important;
   border-bottom: 1px solid var(--border) !important;
   position: sticky;
-  top: 3.2rem;
+  top: 3.5rem;
   z-index: 3;
   padding: 0;
   overflow: visible;
@@ -243,11 +253,12 @@ body {
 
 .md-tabs__list {
   display: flex;
-  gap: .25rem;
-  padding: .5rem 1.5rem;
+  gap: .35rem;
+  padding: .55rem 1.5rem;
   flex-wrap: nowrap;
   overflow-x: auto;
   scrollbar-width: none;
+  align-items: center;
 }
 
 .md-tabs__list::-webkit-scrollbar {
@@ -300,10 +311,10 @@ body {
 }
 
 /* ═══════════════════════════════════════════
-   SIDEBAR — clean panel
+   SIDEBAR — refined panel
    ═══════════════════════════════════════════ */
 .md-sidebar--primary {
-  width: 16rem;
+  width: 16.5rem;
 }
 
 .md-sidebar--secondary {
@@ -326,22 +337,35 @@ body {
 
 .md-nav--primary {
   background: transparent;
-  padding: 1rem .75rem;
+  padding: 1.2rem .5rem;
 }
 
 /* Sidebar section title */
 .md-nav--primary .md-nav__title {
   background: transparent !important;
-  color: var(--text-secondary) !important;
+  color: var(--accent) !important;
   font-size: .6875rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: .06em;
-  padding: .75rem .75rem .35rem;
+  letter-spacing: .08em;
+  padding: .85rem .85rem .4rem;
   margin: 0;
   border: none;
   box-shadow: none !important;
   position: static;
+}
+
+/* Section divider above each platform group */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__title {
+  border-top: 1px solid var(--border);
+  margin-top: .5rem;
+  padding-top: 1rem;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:first-child > .md-nav__title {
+  border-top: none;
+  margin-top: 0;
+  padding-top: .5rem;
 }
 
 /* Sidebar nav items */
@@ -799,6 +823,10 @@ body {
 
   .md-header__inner {
     min-height: 3rem;
+  }
+
+  .md-tabs {
+    top: 3rem;
   }
 
   .md-tabs__list {
