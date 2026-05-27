@@ -78,8 +78,12 @@ body {
 .md-header__title {
   font-size: 0.85rem; font-weight: 700; letter-spacing: -0.02em;
   margin-left: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
-.md-header__topic { color: var(--pad-header-text) !important; font-weight: 700; }
+.md-header__topic { color: var(--pad-header-text) !important; font-weight: 700; display: flex; align-items: center; }
+.md-header__ellipsis { display: flex; align-items: center; }
 .md-header__source { display: none; }
 
 /* ── Hamburger / drawer button ── */
@@ -143,7 +147,7 @@ body {
 .md-main { background: transparent; }
 
 /* ── Sidebar ── */
-.md-sidebar--primary { width: 20rem; }
+.md-sidebar--primary { width: 17rem; }
 .md-sidebar--secondary { width: 14rem; }
 
 .md-sidebar--primary .md-sidebar__scrollwrap {
@@ -219,6 +223,34 @@ body {
   content: '▾';
   font-size: .6rem;
   color: var(--pad-muted);
+}
+.md-sidebar--secondary .md-nav__title:hover {
+  background: var(--pad-accent-soft);
+  cursor: pointer;
+}
+
+/* ── TOC nav items ── */
+.md-sidebar--secondary .md-nav__link {
+  margin: .03rem .15rem;
+  padding: .2rem .6rem;
+  font-size: .8rem;
+  border-left: none;
+  border-radius: 0;
+  color: var(--pad-text);
+}
+.md-sidebar--secondary .md-nav__link:hover {
+  background: var(--pad-accent-soft);
+  border-left: none;
+}
+.md-sidebar--secondary .md-nav__link--active {
+  background: var(--pad-accent-soft);
+  color: var(--pad-accent);
+  border-left: none;
+  font-weight: 600;
+}
+.md-sidebar--secondary .md-nav__item--nested > .md-nav {
+  display: block !important;
+  padding-left: 0;
 }
 
 .md-nav__title {
